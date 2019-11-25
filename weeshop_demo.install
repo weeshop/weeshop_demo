@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Contains weeshop_demo.install.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function weeshop_demo_install() {
+  // If needed, this will import the currency.
+  $currency_importer = \Drupal::service('commerce_price.currency_importer');
+  $currency_importer->import('CNY');
+}

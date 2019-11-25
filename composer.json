@@ -8,6 +8,12 @@
     "minimum-stability": "dev",
     "support": {
         "issues": "https://www.drupal.org/project/issues/weeshop_demo",
-        "source": "http://cgit.drupalcode.org/weeshop_demo",
+        "source": "http://cgit.drupalcode.org/weeshop_demo"
     },
+    "require": {
+        "drupal/migrate_file": "^1.1",
+        "drupal/migrate_manifest": "^1.8",
+        "drupal/migrate_source_csv": "^2.2",
+        "drupal/migrate_tools": "^4.1"
+    }
 }
