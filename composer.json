@@ -1,0 +1,13 @@
+{
+    "name": "weeshop_demo",
+    "type": "drupal-module",
+    "description": "WeeShop Demo datas provider.",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/weeshop_demo",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/weeshop_demo",
+        "source": "http://cgit.drupalcode.org/weeshop_demo",
+    },
+}

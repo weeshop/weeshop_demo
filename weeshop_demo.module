@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains weeshop_demo.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function weeshop_demo_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the weeshop_demo module.
+    case 'help.page.weeshop_demo':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('WeeShop Demo datas provider.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
