@@ -1,0 +1,66 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - weeshop_demo
+id: product_variations
+migration_tags:
+  - CSV
+migration_group: null
+label: 'CSV file migration of product_variations'
+source:
+  plugin: csv
+  path: profiles/custom/weeshop/modules/custom/weeshop_demo/data/product_variations.csv
+  header_row_count: 1
+  keys:
+    - id
+  column_names:
+    - id: 'id'
+    - product: 'product'
+    - sku: 'sku'
+    - title: 'title'
+    - price: 'price'
+    - attribute_color: 'attribute_color'
+    - attribute_size: 'attribute_size'
+  constants:
+    currency_code: 'CNY'
+process:
+  variation_id: id
+  product_id:
+    plugin: migration_lookup
+    migration: products
+    source: product
+  title: title
+  sku: sku
+  price/number: price
+  price/currency_code: constants/currency_code
+  attribute_color:
+    - plugin: entity_generate
+      source: attribute_color
+      entity_type: commerce_product_attribute_value
+      value_key: name
+      bundle_key: attribute
+      bundle: color
+      ignore_case: true
+      default_values:
+        attribute: color
+  attribute_size:
+    - plugin: entity_generate
+      source: attribute_size
+      entity_type: commerce_product_attribute_value
+      value_key: name
+      bundle_key: attribute
+      bundle: size
+      ignore_case: true
+      default_values:
+        attribute: size
+  uid:
+    plugin: default_value
+    default_value: 1
+destination:
+  plugin: 'entity:commerce_product_variation'
+  default_bundle: default
+migration_dependencies:
+  required: {  }
+optional: {  }

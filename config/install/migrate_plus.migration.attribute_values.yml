@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - weeshop_demo
+id: attribute_values
+migration_tags:
+  - CSV
+migration_group: null
+label: 'CSV file migration of attribute_values'
+source:
+  plugin: csv
+  path: profiles/custom/weeshop/modules/custom/weeshop_demo/data/attribute_values.csv
+  header_row_count: 1
+  keys:
+    - id
+  column_names:
+    - id: 'id'
+    - attribute: 'attribute'
+    - name: 'name'
+process:
+  attribute: attribute
+  name: name
+destination:
+  plugin: 'entity:commerce_product_attribute_value'
+migration_dependencies:
+  required: {  }
+optional: {  }

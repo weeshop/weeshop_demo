@@ -22,3 +22,15 @@ function weeshop_demo_help($route_name, RouteMatchInterface $route_match) {
     default:
   }
 }
+
+
+function _weeshop_demo_migration_concat_file_path(Array $data) {
+  $files = explode('|', $data[0]);
+  $path = $data[1];
+
+  $new = [];
+  foreach ($files as $file) {
+    $new[] = $path . $file;
+  }
+  return $new;
+}

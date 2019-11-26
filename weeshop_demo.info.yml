@@ -8,3 +8,4 @@ dependencies:
   - migrate_source_csv:migrate_source_csv
   - migrate_tools:migrate_tools
   - migrate_manifest:migrate_manifest
+  - migrate_inline_image:migrate_inline_image
