@@ -17,6 +17,7 @@ source:
     - id
   column_names:
     - id: 'id'
+    - stores: 'stores'
     - title: 'title'
     - main_image: 'main_image'
     - detail_images: 'detail_images'
@@ -29,6 +30,12 @@ source:
     file_source_path: 'profiles/custom/weeshop/modules/custom/weeshop_demo/data/'
 process:
   product_id: id
+  stores:
+    - plugin: explode
+      source: stores
+      delimiter: ','
+    - plugin: migration_lookup
+      migration: stores
   title: title
   image:
     - plugin: concat
