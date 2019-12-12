@@ -11,7 +11,7 @@ migration_group: null
 label: 'CSV file migration of products'
 source:
   plugin: csv
-  path: profiles/custom/weeshop/modules/custom/weeshop_demo/data/products.csv
+  path: data/products.csv
   header_row_count: 1
   keys:
     - id
@@ -27,7 +27,8 @@ source:
     body_format: 'full_html'
     main_image_file_destination: 'public://product/main_image/'
     detail_images_file_destination: 'public://product/detail_images/'
-    file_source_path: 'profiles/custom/weeshop/modules/custom/weeshop_demo/data/'
+    inline_images_file_destination: 'public://inline-images/migrate/'
+    file_source_path: 'data/'
 process:
   product_id: id
   stores:
@@ -75,8 +76,8 @@ process:
   'body/value':
     - plugin: save_inline_image
       source: body
-      image_file_source_path: 'profiles/custom/weeshop/modules/custom/weeshop_demo/data/'
-      image_file_save_destination: 'public://inline-images/migrate'
+      image_file_source_path: 'constants/file_source_path'
+      image_file_save_destination: 'constants/inline_images_file_destination'
   'body/format': constants/body_format
   uid:
     plugin: default_value

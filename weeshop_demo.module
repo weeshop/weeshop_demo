@@ -6,6 +6,17 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\migrate\MigrateExecutable;
+use Drupal\migrate\MigrateMessage;
+
+const MIGRATION_LIST = [
+  'services',
+  'stores',
+  'attribute_values',
+  'products',
+  'product_variations',
+  'product_adverts'
+];
 
 /**
  * Implements hook_help().
@@ -33,4 +44,32 @@ function _weeshop_demo_migration_concat_file_path(Array $data) {
     $new[] = $path . $file;
   }
   return $new;
+}
+
+
+function weeshop_demo_migration_plugins_alter(array &$migrations) {
+  foreach ($migrations as $id => $migration) {
+    if (in_array($id, MIGRATION_LIST)) {
+      $migration['source']['path'] = __DIR__.'/'.$migration['source']['path'];
+      if (isset($migration['source']['constants']) && isset($migration['source']['constants']['file_source_path'])) {
+        $migration['source']['constants']['file_source_path'] = __DIR__.'/'.$migration['source']['constants']['file_source_path'];
+      }
+      $migrations[$id] = $migration;
+      // \Drupal::logger('weeshop_demo')->notice($migration['source']['path']);
+    }
+  }
+}
+
+/** @noinspection PhpUnhandledExceptionInspection */
+function _weeshop_demo_execute_migrations($action = 'import') {
+  \Drupal::logger('weeshop_demo')->notice('开始导入数据，操作类型：'.$action);
+  $migrations = MIGRATION_LIST;
+  if ($action === 'rollback') $migrations = array_reverse($migrations);
+  foreach ($migrations as $migration_id) {
+    $migration = \Drupal::service('plugin.manager.migration')->createInstance($migration_id);
+    $executable = new MigrateExecutable($migration, new MigrateMessage());
+    if ($action === 'import') $executable->import();
+    if ($action === 'rollback') $executable->rollback();
+    \Drupal::logger('weeshop_demo')->notice('已处理：'.$migration_id);
+  }
 }

@@ -11,7 +11,7 @@ migration_group: null
 label: 'CSV file migration of attribute_values'
 source:
   plugin: csv
-  path: profiles/custom/weeshop/modules/custom/weeshop_demo/data/attribute_values.csv
+  path: data/attribute_values.csv
   header_row_count: 1
   keys:
     - id

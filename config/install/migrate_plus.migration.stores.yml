@@ -11,7 +11,7 @@ migration_group: null
 label: 'CSV file migration of stores'
 source:
   plugin: csv
-  path: profiles/custom/weeshop/modules/custom/weeshop_demo/data/stores.csv
+  path: data/stores.csv
   header_row_count: 1
   keys:
     - id

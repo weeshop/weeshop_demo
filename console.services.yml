@@ -1,0 +1,11 @@
+services:
+  weeshop_demo.weeshop_demo_import:
+    class: Drupal\weeshop_demo\Command\ImportCommand
+    arguments: []
+    tags:
+      - { name: drupal.command }
+  weeshop_demo.weeshop_demo_rollback:
+    class: Drupal\weeshop_demo\Command\RollbackCommand
+    arguments: []
+    tags:
+      - { name: drupal.command }
