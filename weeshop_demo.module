@@ -5,13 +5,16 @@
  * Contains weeshop_demo.module.
  */
 
+use Drupal\Core\Link;
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
 use Drupal\migrate\MigrateExecutable;
 use Drupal\migrate\MigrateMessage;
 
 const MIGRATION_LIST = [
   'services',
   'stores',
+  'product_categories',
   'attribute_values',
   'products',
   'product_variations',
@@ -71,5 +74,38 @@ function _weeshop_demo_execute_migrations($action = 'import') {
     if ($action === 'import') $executable->import();
     if ($action === 'rollback') $executable->rollback();
     \Drupal::logger('weeshop_demo')->notice('已处理：'.$migration_id);
+  }
+  // 为产品分类创建菜单链接
+  /** @var \Drupal\taxonomy\TermStorageInterface $termStorage */
+  $termStorage = \Drupal::entityTypeManager()->getStorage('taxonomy_term');
+  $categories = $termStorage->loadTree('product_categories', 0, null, true);
+  _weeshop_demo_create_menu_links($categories);
+}
+
+function _weeshop_demo_create_menu_links($categories, $parent = null, $parent_link = null) {
+  foreach ($categories as $category) {
+    /** @var \Drupal\taxonomy\TermInterface $category */
+    $field = $category->get('parent');
+    $empty = $field->isEmpty();
+    $entity = $field->entity;
+    if ($parent) {
+      if ($empty || !$entity || $entity->id() !== $parent) continue;
+    } else {
+      if ($entity !== null) continue;
+    }
+
+    $data = [
+      'bundle' => 'menu_link_content',
+      'title' => $category->label(),
+      'link' => 'internal:/product-search?f[0]=categories:' . $category->id(),
+      'menu_name' => 'main',
+      'expanded' => true
+    ];
+    if ($parent) {
+      $data['parent'] = 'menu_link_content:' . $parent_link->uuid();
+    }
+    $menu_link = \Drupal\menu_link_content\Entity\MenuLinkContent::create($data);
+    $menu_link->save();
+    _weeshop_demo_create_menu_links($categories, $category->id(), $menu_link);
   }
 }

@@ -1,5 +1,6 @@
 - services
 - stores
+- product_categories
 - attribute_values
 - products
 - product_variations

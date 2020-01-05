@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - weeshop_demo
+id: product_categories
+migration_tags:
+  - CSV
+migration_group: null
+label: 'CSV file migration of product_categories'
+source:
+  plugin: csv
+  path: data/product_categories.csv
+  header_row_count: 1
+  keys:
+    - id
+  column_names:
+    - id: 'id'
+    - name: 'name'
+    - parent: 'parent'
+process:
+  name: name
+  parent:
+    - plugin: migration_lookup
+      migration: product_categories
+      source: parent
+destination:
+  plugin: 'entity:taxonomy_term'
+  default_bundle: product_categories
+migration_dependencies:
+  required: {  }
+optional: {  }
