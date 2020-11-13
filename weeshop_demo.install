@@ -14,8 +14,8 @@ function weeshop_demo_install() {
   // If needed, this will import the currency.
   $currency_importer = \Drupal::service('commerce_price.currency_importer');
   $currency_importer->import('CNY');
-  _weeshop_demo_create_oauth2_consumer();
-  _weeshop_demo_init_permissions();
+  //_weeshop_demo_create_oauth2_consumer();
+  //_weeshop_demo_init_permissions();
 }
 
 function _weeshop_demo_create_oauth2_consumer() {
