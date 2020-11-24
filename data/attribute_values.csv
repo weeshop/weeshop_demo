@@ -1,9 +1,9 @@
 id,attribute,name
-1,color,红色
-2,color,白色
-3,color,黑色
-4,color,黄色
-5,size,S码
-6,size,M码
-7,size,L码
-8,size,XL码
+1,clothes_color,red
+2,clothes_color,white
+3,clothes_color,black
+4,clothes_color,pink
+5,clothes_size,S
+6,clothes_size,M
+7,clothes_size,L
+8,clothes_size,XL

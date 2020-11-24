@@ -9,3 +9,4 @@ dependencies:
   - migrate_tools:migrate_tools
   - migrate_manifest:migrate_manifest
   - migrate_inline_image:migrate_inline_image
+  - weeshop_product_tpye_clothes

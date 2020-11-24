@@ -21,10 +21,13 @@ source:
     - sku: 'sku'
     - title: 'title'
     - price: 'price'
-    - attribute_color: 'attribute_color'
-    - attribute_size: 'attribute_size'
+    - attribute_clothes_color: 'attribute_clothes_color'
+    - attribute_clothes_size: 'attribute_clothes_size'
+    - stock: 'stock'
+    - weight: 'weight'
   constants:
     currency_code: 'CNY'
+    weight_unit: 'kg'
 process:
   variation_id: id
   product_id:
@@ -35,32 +38,35 @@ process:
   sku: sku
   price/number: price
   price/currency_code: constants/currency_code
-  attribute_color:
+  attribute_clothes_color:
     - plugin: entity_generate
-      source: attribute_color
+      source: attribute_clothes_color
       entity_type: commerce_product_attribute_value
       value_key: name
       bundle_key: attribute
-      bundle: color
+      bundle: clothes_color
       ignore_case: true
       default_values:
-        attribute: color
-  attribute_size:
+        attribute: clothes_color
+  attribute_clothes_size:
     - plugin: entity_generate
-      source: attribute_size
+      source: attribute_clothes_size
       entity_type: commerce_product_attribute_value
       value_key: name
       bundle_key: attribute
-      bundle: size
+      bundle: clothes_size
       ignore_case: true
       default_values:
-        attribute: size
+        attribute: clothes_size
+  stock: stock
+  weight/number: weight
+  weight/unit: constants/weight_unit
   uid:
     plugin: default_value
     default_value: 1
 destination:
   plugin: 'entity:commerce_product_variation'
-  default_bundle: default
+  default_bundle: clothes
 migration_dependencies:
   required: {  }
 optional: {  }
