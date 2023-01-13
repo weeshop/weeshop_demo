@@ -1,12 +1,12 @@
 name: 'WeeShop Demo'
 type: module
-description: 'WeeShop Demo datas provider.'
-core: 8.x
+description: 'WeeShop Demo data provider.'
 package: 'WeeShop'
+core_version_requirement: ^9.2 || ^10
 dependencies:
   - migrate_file:migrate_file
   - migrate_source_csv:migrate_source_csv
   - migrate_tools:migrate_tools
   - migrate_manifest:migrate_manifest
   - migrate_inline_image:migrate_inline_image
-  - weeshop_product_tpye_clothes
+  - weeshop_product_type_clothes
