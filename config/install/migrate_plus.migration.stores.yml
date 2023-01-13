@@ -12,21 +12,42 @@ label: 'CSV file migration of stores'
 source:
   plugin: csv
   path: data/stores.csv
-  header_row_count: 1
-  keys:
-    - id
-  column_names:
-    - id: 'id'
-    - type: 'type'
-    - name: 'name'
-    - mail: 'mail'
-    - default_currency: 'default_currency'
-    - address_country_code: 'address_country_code'
-    - address_administrative_area: 'address_administrative_area'
-    - address_locality: 'address_locality'
-    - address_dependent_locality: 'address_dependent_locality'
-    - address_postal_code: 'address_postal_code'
-    - address_address_line1: 'address_address_line1'
+  header_offset: 0
+  ids: [id]
+  fields:
+    -
+      name: id
+      label: 'id'
+    -
+      name: type
+      label: 'type'
+    -
+      name: name
+      label: 'name'
+    -
+      name: mail
+      label: 'mail'
+    -
+      name: default_currency
+      label: 'default_currency'
+    -
+      name: address_country_code
+      label: 'address_country_code'
+    -
+      name: address_administrative_area
+      label: 'address_administrative_area'
+    -
+      name: address_locality
+      label: 'address_locality'
+    -
+      name: address_dependent_locality
+      label: 'address_dependent_locality'
+    -
+      name: address_postal_code
+      label: 'address_postal_code'
+    -
+      name: address_address_line1
+      label: 'address_address_line1'
 process:
   store_id: id
   type: type

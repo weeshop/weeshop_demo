@@ -12,17 +12,30 @@ label: 'CSV file migration of product adverts.'
 source:
   plugin: csv
   path: data/product_adverts.csv
-  header_row_count: 1
-  keys:
-    - id
-  column_names:
-    - id: 'id'
-    - title: 'title'
-    - sub_title: 'sub_title'
-    - summary: 'summary'
-    - image: 'image'
-    - product: 'product'
-    - placements: 'placements'
+  header_offset: 0
+  ids: [id]
+  fields:
+    -
+      name: id
+      label: 'id'
+    -
+      name: title
+      label: 'title'
+    -
+      name: sub_title
+      label: 'sub_title'
+    -
+      name: summary
+      label: 'summary'
+    -
+      name: image
+      label: 'image'
+    -
+      name: product
+      label: 'product'
+    -
+      name: placements
+      label: 'placements'
   constants:
     image_file_destination: 'public://product_adverts/'
     file_source_path: 'data/'

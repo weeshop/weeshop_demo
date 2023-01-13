@@ -12,13 +12,18 @@ label: 'CSV file migration of product_categories'
 source:
   plugin: csv
   path: data/product_categories.csv
-  header_row_count: 1
-  keys:
-    - id
-  column_names:
-    - id: 'id'
-    - name: 'name'
-    - parent: 'parent'
+  header_offset: 0
+  ids: [id]
+  fields:
+    -
+      name: id
+      label: 'id'
+    -
+      name: name
+      label: 'name'
+    -
+      name: parent
+      label: 'parent'
 process:
   name: name
   parent:

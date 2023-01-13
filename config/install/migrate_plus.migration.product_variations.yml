@@ -12,19 +12,36 @@ label: 'CSV file migration of product_variations'
 source:
   plugin: csv
   path: data/product_variations.csv
-  header_row_count: 1
-  keys:
-    - id
-  column_names:
-    - id: 'id'
-    - product: 'product'
-    - sku: 'sku'
-    - title: 'title'
-    - price: 'price'
-    - attribute_clothes_color: 'attribute_clothes_color'
-    - attribute_clothes_size: 'attribute_clothes_size'
-    - stock: 'stock'
-    - weight: 'weight'
+  header_offset: 0
+  ids: [id]
+  fields:
+    -
+      name: id
+      label: 'id'
+    -
+      name: product
+      label: 'product'
+    -
+      name: sku
+      label: 'sku'
+    -
+      name: title
+      label: 'title'
+    -
+      name: price
+      label: 'price'
+    -
+      name: attribute_clothes_color
+      label: 'attribute_clothes_color'
+    -
+      name: attribute_clothes_size
+      label: 'attribute_clothes_size'
+    -
+      name: stock
+      label: 'stock'
+    -
+      name: weight
+      label: 'weight'
   constants:
     currency_code: 'CNY'
     weight_unit: 'kg'

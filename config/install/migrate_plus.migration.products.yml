@@ -12,17 +12,30 @@ label: 'CSV file migration of products'
 source:
   plugin: csv
   path: data/products.csv
-  header_row_count: 1
-  keys:
-    - id
-  column_names:
-    - id: 'id'
-    - stores: 'stores'
-    - title: 'title'
-    - main_image: 'main_image'
-    - detail_images: 'detail_images'
-    - categories: 'categories'
-    - body: 'body'
+  header_offset: 0
+  ids: [id]
+  fields:
+    -
+      name: id
+      label: 'id'
+    -
+      name: stores
+      label: 'stores'
+    -
+      name: title
+      label: 'title'
+    -
+      name: main_image
+      label: 'main_image'
+    -
+      name: detail_images
+      label: 'detail_images'
+    -
+      name: categories
+      label: 'categories'
+    -
+      name: body
+      label: 'body'
   constants:
     body_format: 'full_html'
     main_image_file_destination: 'public://product/main_image/'
