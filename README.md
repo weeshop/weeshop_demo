@@ -1,2 +1,2 @@
 # weeshop_demo
-Provides WeeShop Demo datas.
+Provides WeeShop demonstration data.
