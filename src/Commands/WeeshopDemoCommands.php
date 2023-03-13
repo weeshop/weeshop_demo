@@ -2,7 +2,6 @@
 
 namespace Drupal\weeshop_demo\Commands;
 
-use Consolidation\OutputFormatters\StructuredData\RowsOfFields;
 use Drush\Commands\DrushCommands;
 
 /**
