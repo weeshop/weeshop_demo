@@ -2,6 +2,7 @@
 
 namespace Drupal\Tests\weeshop_demo\Functional;
 
+use Drupal\user\UserInterface;
 use Drupal\Core\Url;
 use Drupal\Tests\BrowserTestBase;
 
@@ -11,6 +12,13 @@ use Drupal\Tests\BrowserTestBase;
  * @group weeshop_demo
  */
 class LoadTest extends BrowserTestBase {
+
+  /**
+   * Default theme running test.
+   *
+   * @var string
+   */
+  public $defaultTheme = 'stable';
 
   /**
    * Modules to enable.
@@ -24,10 +32,12 @@ class LoadTest extends BrowserTestBase {
    *
    * @var \Drupal\user\UserInterface
    */
-  protected $user;
+  protected UserInterface $user;
 
   /**
    * {@inheritdoc}
+   *
+   * @throws \Drupal\Core\Entity\EntityStorageException
    */
   protected function setUp() {
     parent::setUp();
@@ -37,6 +47,8 @@ class LoadTest extends BrowserTestBase {
 
   /**
    * Tests that the home page loads with a 200 response.
+   *
+   * @throws \Behat\Mink\Exception\ExpectationException
    */
   public function testLoad() {
     $this->drupalGet(Url::fromRoute('<front>'));

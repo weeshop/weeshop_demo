@@ -5,37 +5,11 @@
  * Contains weeshop_demo.install.
  */
 
-use Drupal\user\RoleInterface;
-
 /**
  * Implements hook_install().
  */
-function weeshop_demo_install() {
+function weeshop_demo_install(): void {
   // If needed, this will import the currency.
-  $currency_importer = \Drupal::service('commerce_price.currency_importer');
+  $currency_importer = Drupal::service('commerce_price.currency_importer');
   $currency_importer->import('CNY');
-  //_weeshop_demo_create_oauth2_consumer();
-  //_weeshop_demo_init_permissions();
-}
-
-function _weeshop_demo_create_oauth2_consumer() {
-  // 添加Oauth2 client, ClientID 是entity创建后的UUID
-  $consumer = \Drupal\consumers\Entity\Consumer::create([
-    'owner_id' => 1,
-    'user_id' => 0,
-    'label' => 'UniApp',
-    'uuid' => '6037a686-65b6-4a5a-b501-8ee1f0bd5e64',
-    'secret' => 'sdgfdsfghfgjghkgh345sadfgdfgsfd',
-    'roles' => []
-  ]);
-  $consumer->save();
-}
-
-
-function _weeshop_demo_init_permissions() {
-  // 为已认证用户添加权限
-  $permissions = [
-    'grant simple_oauth codes'
-  ];
-  user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, $permissions);
 }

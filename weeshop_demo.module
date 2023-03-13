@@ -5,9 +5,8 @@
  * Contains weeshop_demo.module.
  */
 
-use Drupal\Core\Link;
+use Drupal\menu_link_content\Entity\MenuLinkContent;
 use Drupal\Core\Routing\RouteMatchInterface;
-use Drupal\Core\Url;
 use Drupal\migrate\MigrateExecutable;
 use Drupal\migrate\MigrateMessage;
 
@@ -18,27 +17,29 @@ const MIGRATION_LIST = [
   'attribute_values',
   'products',
   'product_variations',
-  'product_adverts'
+  'product_adverts',
 ];
 
 /**
  * Implements hook_help().
  */
-function weeshop_demo_help($route_name, RouteMatchInterface $route_match) {
+function weeshop_demo_help($route_name, RouteMatchInterface $route_match): string {
   switch ($route_name) {
     // Main module help for the weeshop_demo module.
     case 'help.page.weeshop_demo':
-      $output = '';
-      $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('WeeShop Demo datas provider.') . '</p>';
+      $output = '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('WeeShop demonstration data provider.') . '</p>';
       return $output;
 
     default:
+      return '';
   }
 }
 
-
-function _weeshop_demo_migration_concat_file_path(Array $data) {
+/**
+ * Tool to concat the file names with a prefix path.
+ */
+function _weeshop_demo_migration_concat_file_path(array $data): array {
   $files = explode('|', $data[0]);
   $path = $data[1];
 
@@ -49,49 +50,70 @@ function _weeshop_demo_migration_concat_file_path(Array $data) {
   return $new;
 }
 
-
-function weeshop_demo_migration_plugins_alter(array &$migrations) {
+/**
+ * Dynamic alter the relative file path to an absolute path.
+ */
+function weeshop_demo_migration_plugins_alter(array &$migrations): void {
   foreach ($migrations as $id => $migration) {
     if (in_array($id, MIGRATION_LIST)) {
-      $migration['source']['path'] = __DIR__.'/'.$migration['source']['path'];
+      $migration['source']['path'] = __DIR__ . '/' . $migration['source']['path'];
       if (isset($migration['source']['constants']) && isset($migration['source']['constants']['file_source_path'])) {
-        $migration['source']['constants']['file_source_path'] = __DIR__.'/'.$migration['source']['constants']['file_source_path'];
+        $migration['source']['constants']['file_source_path'] = __DIR__ . '/' . $migration['source']['constants']['file_source_path'];
       }
       $migrations[$id] = $migration;
-      // \Drupal::logger('weeshop_demo')->notice($migration['source']['path']);
     }
   }
 }
 
-/** @noinspection PhpUnhandledExceptionInspection */
-function _weeshop_demo_execute_migrations($action = 'import') {
-  \Drupal::logger('weeshop_demo')->notice('开始导入数据，操作类型：'.$action);
+/**
+ * Import or rollback the demonstration data.
+ *
+ * @noinspection PhpUnhandledExceptionInspection
+ */
+function _weeshop_demo_execute_migrations($action = 'import'): void {
+  \Drupal::logger('weeshop_demo')->notice('开始导入数据，操作类型：' . $action);
   $migrations = MIGRATION_LIST;
-  if ($action === 'rollback') $migrations = array_reverse($migrations);
+  if ($action === 'rollback') {
+    $migrations = array_reverse($migrations);
+  }
   foreach ($migrations as $migration_id) {
     $migration = \Drupal::service('plugin.manager.migration')->createInstance($migration_id);
     $executable = new MigrateExecutable($migration, new MigrateMessage());
-    if ($action === 'import') $executable->import();
-    if ($action === 'rollback') $executable->rollback();
-    \Drupal::logger('weeshop_demo')->notice('已处理：'.$migration_id);
+    if ($action === 'import') {
+      $executable->import();
+    }
+    if ($action === 'rollback') {
+      $executable->rollback();
+    }
+    \Drupal::logger('weeshop_demo')->notice('已处理：' . $migration_id);
   }
-  // 为产品分类创建菜单链接
+  // 为产品分类创建菜单链接.
   /** @var \Drupal\taxonomy\TermStorageInterface $termStorage */
   $termStorage = \Drupal::entityTypeManager()->getStorage('taxonomy_term');
-  $categories = $termStorage->loadTree('product_categories', 0, null, true);
+  $categories = $termStorage->loadTree('product_categories', 0, NULL, TRUE);
   _weeshop_demo_create_menu_links($categories);
 }
 
-function _weeshop_demo_create_menu_links($categories, $parent = null, $parent_link = null) {
+/**
+ * Create menu links for the given categories.
+ *
+ * @throws \Drupal\Core\Entity\EntityStorageException
+ */
+function _weeshop_demo_create_menu_links($categories, $parent = NULL, $parent_link = NULL): void {
   foreach ($categories as $category) {
     /** @var \Drupal\taxonomy\TermInterface $category */
     $field = $category->get('parent');
     $empty = $field->isEmpty();
     $entity = $field->entity;
     if ($parent) {
-      if ($empty || !$entity || $entity->id() !== $parent) continue;
-    } else {
-      if ($entity !== null) continue;
+      if ($empty || !$entity || $entity->id() !== $parent) {
+        continue;
+      }
+    }
+    else {
+      if ($entity !== NULL) {
+        continue;
+      }
     }
 
     $data = [
@@ -99,12 +121,12 @@ function _weeshop_demo_create_menu_links($categories, $parent = null, $parent_li
       'title' => $category->label(),
       'link' => 'internal:/product-search?f[0]=categories:' . $category->id(),
       'menu_name' => 'main',
-      'expanded' => true
+      'expanded' => TRUE,
     ];
     if ($parent) {
       $data['parent'] = 'menu_link_content:' . $parent_link->uuid();
     }
-    $menu_link = \Drupal\menu_link_content\Entity\MenuLinkContent::create($data);
+    $menu_link = MenuLinkContent::create($data);
     $menu_link->save();
     _weeshop_demo_create_menu_links($categories, $category->id(), $menu_link);
   }
