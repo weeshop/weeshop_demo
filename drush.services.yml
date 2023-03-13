@@ -1,0 +1,5 @@
+services:
+  weeshop_demo.commands:
+    class: \Drupal\weeshop_demo\Commands\WeeshopDemoCommands
+    tags:
+      - { name: drush.command }
