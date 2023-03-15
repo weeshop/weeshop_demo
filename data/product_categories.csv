@@ -1,9 +1,12 @@
-id,name,parent
-1,男装,""
-2,女装,""
-3,秋装,1
-4,洗行,1
-5,卫衣,1
-6,职场,2
-7,正装,2
-8,毛衣,2
+id,name,path,parent
+product_category1,Electronics,/products/category/electronics,""
+product_category2,Gift Ideas,/products/category/gift-ideas,""
+product_category3,Beds,/products/category/beds,""
+product_category4,Lighting,/products/category/lighting,""
+product_category5,Sofas & Sleeper sofas,/products/category/sofas-and-sleeper-sofas,""
+product_category6,Storage,/products/category/storage,""
+product_category7,Armchairs & Chaises,/products/category/armchairs-and-chaises,""
+product_category8,Decoration,/products/category/decoration,""
+product_category9,Kitchen Cabinets,/products/category/kitchen-cabinets,""
+product_category10,Coffee & Tables,/products/category/coffee-and-tables,""
+product_category11,Outdoor Furniture,/products/category/outdoor-furniture,""

@@ -1,9 +1,10 @@
 id,attribute,name
-1,clothes_color,red
-2,clothes_color,white
-3,clothes_color,black
-4,clothes_color,pink
-5,clothes_size,S
-6,clothes_size,M
-7,clothes_size,L
-8,clothes_size,XL
+attribute_value1,clothes_color,red
+attribute_value2,clothes_color,white
+attribute_value3,clothes_color,black
+attribute_value4,clothes_color,pink
+attribute_value5,clothes_size,Small
+attribute_value6,clothes_size,Medium
+attribute_value7,clothes_size,Large
+attribute_value8,clothes_size,Extra Large
+attribute_value9,clothes_size,Extra Small
