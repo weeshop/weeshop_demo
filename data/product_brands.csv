@@ -1,0 +1,4 @@
+id,name,path,parent
+product_brand1,Gucci,/products/brand/gucci,""
+product_brand2,Louis Vuitton,/products/brand/lv,""
+product_brand3,Hermes,/products/brand/hermes,""

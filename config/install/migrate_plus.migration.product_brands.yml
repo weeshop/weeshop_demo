@@ -1,0 +1,42 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - weeshop_demo
+id: product_brands
+migration_tags:
+  - CSV
+migration_group: null
+label: 'CSV file migration of product_brands'
+source:
+  plugin: csv
+  path: data/product_brands.csv
+  header_offset: 0
+  ids: [id]
+  fields:
+    -
+      name: id
+      label: 'id'
+    -
+      name: name
+      label: 'name'
+    -
+      name: path
+      label: 'path'
+    -
+      name: parent
+      label: 'parent'
+process:
+  name: name
+  path: path
+  parent:
+    - plugin: migration_lookup
+      migration: product_brands
+      source: parent
+destination:
+  plugin: 'entity:taxonomy_term'
+  default_bundle: product_brands
+migration_dependencies:
+  required: {  }
+optional: {  }

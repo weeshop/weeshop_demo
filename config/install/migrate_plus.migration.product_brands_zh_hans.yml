@@ -4,14 +4,14 @@ dependencies:
   enforced:
     module:
       - weeshop_demo
-id: product_categories_zh_hans
+id: product_brands_zh_hans
 migration_tags:
   - CSV
 migration_group: null
-label: 'CSV file migration of product_categories zh-hans'
+label: 'CSV file migration of product_brands zh-hans'
 source:
   plugin: csv
-  path: data/product_categories_zh_hans.csv
+  path: data/product_brands_zh_hans.csv
   header_offset: 0
   ids: [id]
   fields:
@@ -28,14 +28,14 @@ process:
     plugin: migration_lookup
     source: id
     migration:
-      - product_categories
+      - product_brands
   name: name
   langcode: constants/langcode
 destination:
   plugin: 'entity:taxonomy_term'
-  default_bundle: product_categories
+  default_bundle: product_brands
   translations: true
 migration_dependencies:
   required:
-    - product_categories
+    - product_brands
 optional: {  }
