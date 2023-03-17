@@ -1,4 +1,4 @@
 id,type,name,mail,default_currency,address_country_code,address_administrative_area,address_locality,address_dependent_locality,address_postal_code,address_address_line1
-1,online,"猫须软件旗舰店",164713332@qq.com,CNY,CN,"Guangdong Sheng","Guangzhou Shi","Tianhe Qu",510000,中山大道
-2,online,"猫须智能家居店",164713332@qq.com,CNY,CN,"Guangdong Sheng","Guangzhou Shi","Tianhe Qu",510000,中山大道
-3,online,"猫须潮流服装店",164713332@qq.com,CNY,CN,"Guangdong Sheng","Guangzhou Shi","Tianhe Qu",510000,中山大道
+store1,online,"CatWork software",catwork-software@qq.com,CNY,CN,"Guangdong Sheng","Guangzhou Shi","Tianhe Qu",510000,ZhongShan road
+store2,online,"CatWork furniture",catwork-furniture@qq.com,CNY,CN,"Guangdong Sheng","Guangzhou Shi","Tianhe Qu",510000,ZhongShan road
+store3,online,"CatWork fashion",catwork-fashion@qq.com,CNY,CN,"Guangdong Sheng","Guangzhou Shi","Tianhe Qu",510000,ZhongShan road

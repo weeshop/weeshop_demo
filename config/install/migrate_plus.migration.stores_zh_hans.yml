@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - weeshop_demo
+id: stores
+migration_tags:
+  - CSV
+migration_group: null
+label: 'CSV file migration of stores zh-hans'
+source:
+  plugin: csv
+  path: data/stores.csv
+  header_offset: 0
+  ids: [id]
+  fields:
+    -
+      name: id
+      label: 'id'
+    -
+      name: name
+      label: 'name'
+process:
+  store_id:
+    plugin: migration_lookup
+    source: id
+    migration:
+      - stores
+  name: name
+  uid:
+    plugin: default_value
+    default_value: 1
+destination:
+  plugin: 'entity:commerce_store'
+  default_bundle: online
+  translations: true
+migration_dependencies:
+  required:
+    - stores
+optional: {  }

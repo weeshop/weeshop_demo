@@ -49,7 +49,6 @@ source:
       name: address_address_line1
       label: 'address_address_line1'
 process:
-  store_id: id
   type: type
   name: name
   mail: mail
