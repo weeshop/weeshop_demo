@@ -1,8 +1,0 @@
-id,title,link,menu_name,parent
-1,男装,"/product-search?f[0]=categories:5",main,""
-2,女装,"/product-search?f[0]=categories:1",main,""
-3,秋装,"/product-search?f[0]=categories:1",main,"男装"
-4,卫衣,"/product-search?f[0]=categories:1",main,"男装"
-5,职场,"/product-search?f[0]=categories:1",main,"女装"
-6,正装,"/product-search?f[0]=categories:1",main,"女装"
-7,毛衣,"/product-search?f[0]=categories:1",main,"女装"
