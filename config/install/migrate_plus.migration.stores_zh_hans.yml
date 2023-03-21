@@ -4,7 +4,7 @@ dependencies:
   enforced:
     module:
       - weeshop_demo
-id: stores
+id: stores_zh_hans
 migration_tags:
   - CSV
 migration_group: null
