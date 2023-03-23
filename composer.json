@@ -1,5 +1,5 @@
 {
-    "name": "weeshop/weeshop_demo",
+    "name": "drupal/weeshop_demo",
     "type": "drupal-module",
     "description": "WeeShop Demo datas provider.",
     "keywords": [
