@@ -29,13 +29,6 @@ class MigrateManifestFileReadingTest extends BrowserTestBase {
   protected $profile = 'weeshop';
 
   /**
-   * {@inheritdoc}
-   */
-  protected function setUp(): void {
-    parent::setUp();
-  }
-
-  /**
    * Tests something.
    */
   public function testSomething() {
