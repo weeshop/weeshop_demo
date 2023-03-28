@@ -16,7 +16,7 @@ $image_data_path = 'images/molla/product';
 $image_target_path = __DIR__ . '/data/' . $image_data_path;
 $product_brands_csv_target_path = __DIR__ . '/data/product_brands.csv';
 $product_categories_csv_target_path = __DIR__ . '/data/product_categories.csv';
-$product_attibute_values_csv_target_path = __DIR__ . '/data/product_attibute_values.csv';
+$product_attribute_values_csv_target_path = __DIR__ . '/data/product_attibute_values.csv';
 $products_csv_target_path = __DIR__ . '/data/products.csv';
 $product_variations_csv_target_path = __DIR__ . '/data/products.csv';
 
@@ -71,7 +71,7 @@ foreach ($json['products'] as $product_index => $product) {
 
 file_put_contents($product_brands_csv_target_path, $product_brands_csv);
 file_put_contents($product_categories_csv_target_path, $product_categories_csv);
-file_put_contents($product_attibute_values_csv_target_path, $product_attribute_values_csv);
+file_put_contents($product_attribute_values_csv_target_path, $product_attribute_values_csv);
 file_put_contents($products_csv_target_path, $products_csv);
 file_put_contents($product_variations_csv_target_path, $product_variations_csv);
 
