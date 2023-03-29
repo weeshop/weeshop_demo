@@ -1,4 +1,7 @@
 id,name,path,parent
-product_brand1,Gucci,/products/brand/gucci,""
-product_brand2,Louis Vuitton,/products/brand/lv,""
-product_brand3,Hermes,/products/brand/hermes,""
+product_brand1,F&F,/products/brand/fandf,""
+product_brand2,UGG,/products/brand/ugg,""
+product_brand3,Nike,/products/brand/nike,""
+product_brand4,River Island,/products/brand/river-island,""
+product_brand5,Geox,/products/brand/geox,""
+product_brand6,New Balance,/products/brand/new-balance,""

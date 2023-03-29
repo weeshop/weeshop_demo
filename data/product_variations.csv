@@ -1,25 +1,526 @@
 id,product,sku,title,price,attribute_clothes_color,attribute_clothes_size,stock,weight
-1,1,aaa1,AAA,188.00,red,XL,100,0.5
-2,1,aaa2,AAA,123.20,red,XL,100,0.5
-3,2,aaa3,AAA,153.30,red,M,100,0.5
-4,2,aaa4,AAA,198.40,red,M,100,0.5
-5,3,aaa5,AAA,178.30,red,M,100,0.5
-6,3,aaa6,AAA,127.40,red,M,100,0.5
-7,4,aaa7,AAA,126.30,red,M,100,0.5
-8,4,aaa8,AAA,128.40,red,M,100,0.5
-9,5,aaa9,AAA,138.30,red,M,100,0.5
-10,5,aaa10,AAA,559.40,red,M,100,0.5
-11,6,aaa11,AAA,558.30,red,M,100,0.5
-12,6,aaa12,AAA,665.40,red,M,100,0.5
-13,7,aaa13,AAA,738.30,red,M,100,0.5
-14,7,aaa14,AAA,389.40,red,M,100,0.5
-15,8,aaa15,AAA,358.30,red,M,100,0.5
-16,8,aaa16,AAA,350.40,red,M,100,0.5
-17,9,aaa17,AAA,320.30,red,M,100,0.5
-18,9,aaa18,AAA,328.40,red,M,100,0.5
-19,10,aaa19,AAA,398.30,red,M,100,0.5
-20,10,aaa20,AAA,778.40,red,M,100,0.5
-21,11,aaa21,AAA,668.30,red,M,100,0.5
-22,11,aaa22,AAA,198.40,red,M,100,0.5
-23,12,aaa23,AAA,168.30,red,M,100,0.5
-24,12,aaa24,AAA,128.40,red,M,100,0.5
+product_variation1,product0,product0-green-medium,Green - Medium,100,attribute_color1,attribute_size1,1000,0
+product_variation2,product0,product0-green-large,Green - Large,100,attribute_color1,attribute_size2,1000,0
+product_variation3,product0,product0-green-extra_large,Green - Extra Large,100,attribute_color1,attribute_size3,1000,0
+product_variation4,product0,product0-green-extra_small,Green - Extra Small,100,attribute_color1,attribute_size4,1000,0
+product_variation5,product0,product0-green-small,Green - Small,100,attribute_color1,attribute_size5,1000,0
+product_variation6,product0,product0-red-medium,Red - Medium,100,attribute_color2,attribute_size1,1000,0
+product_variation7,product0,product0-red-large,Red - Large,100,attribute_color2,attribute_size2,1000,0
+product_variation8,product0,product0-red-extra_large,Red - Extra Large,100,attribute_color2,attribute_size3,1000,0
+product_variation9,product0,product0-red-extra_small,Red - Extra Small,100,attribute_color2,attribute_size4,1000,0
+product_variation10,product0,product0-red-small,Red - Small,100,attribute_color2,attribute_size5,1000,0
+product_variation11,product0,product0-yellow-medium,Yellow - Medium,100,attribute_color3,attribute_size1,1000,0
+product_variation12,product0,product0-yellow-large,Yellow - Large,100,attribute_color3,attribute_size2,1000,0
+product_variation13,product0,product0-yellow-extra_large,Yellow - Extra Large,100,attribute_color3,attribute_size3,1000,0
+product_variation14,product0,product0-yellow-extra_small,Yellow - Extra Small,100,attribute_color3,attribute_size4,1000,0
+product_variation15,product0,product0-yellow-small,Yellow - Small,100,attribute_color3,attribute_size5,1000,0
+product_variation16,product0,product0-black-medium,Black - Medium,100,attribute_color4,attribute_size1,1000,0
+product_variation17,product0,product0-black-large,Black - Large,100,attribute_color4,attribute_size2,1000,0
+product_variation18,product0,product0-black-extra_large,Black - Extra Large,100,attribute_color4,attribute_size3,1000,0
+product_variation19,product0,product0-black-extra_small,Black - Extra Small,100,attribute_color4,attribute_size4,1000,0
+product_variation20,product0,product0-black-small,Black - Small,100,attribute_color4,attribute_size5,1000,0
+product_variation21,product0,product0-grey-medium,Grey - Medium,100,attribute_color5,attribute_size1,1000,0
+product_variation22,product0,product0-grey-large,Grey - Large,100,attribute_color5,attribute_size2,1000,0
+product_variation23,product0,product0-grey-extra_large,Grey - Extra Large,100,attribute_color5,attribute_size3,1000,0
+product_variation24,product0,product0-grey-extra_small,Grey - Extra Small,100,attribute_color5,attribute_size4,1000,0
+product_variation25,product0,product0-grey-small,Grey - Small,100,attribute_color5,attribute_size5,1000,0
+product_variation26,product0,product0-blue-medium,Blue - Medium,100,attribute_color6,attribute_size1,1000,0
+product_variation27,product0,product0-blue-large,Blue - Large,100,attribute_color6,attribute_size2,1000,0
+product_variation28,product0,product0-blue-extra_large,Blue - Extra Large,100,attribute_color6,attribute_size3,1000,0
+product_variation29,product0,product0-blue-extra_small,Blue - Extra Small,100,attribute_color6,attribute_size4,1000,0
+product_variation30,product0,product0-blue-small,Blue - Small,100,attribute_color6,attribute_size5,1000,0
+product_variation31,product0,product0-yellow-medium,Yellow - Medium,100,attribute_color7,attribute_size1,1000,0
+product_variation32,product0,product0-yellow-large,Yellow - Large,100,attribute_color7,attribute_size2,1000,0
+product_variation33,product0,product0-yellow-extra_large,Yellow - Extra Large,100,attribute_color7,attribute_size3,1000,0
+product_variation34,product0,product0-yellow-extra_small,Yellow - Extra Small,100,attribute_color7,attribute_size4,1000,0
+product_variation35,product0,product0-yellow-small,Yellow - Small,100,attribute_color7,attribute_size5,1000,0
+product_variation36,product1,product1-green-medium,Green - Medium,100,attribute_color1,attribute_size1,1000,0
+product_variation37,product1,product1-green-large,Green - Large,100,attribute_color1,attribute_size2,1000,0
+product_variation38,product1,product1-green-extra_large,Green - Extra Large,100,attribute_color1,attribute_size3,1000,0
+product_variation39,product1,product1-green-extra_small,Green - Extra Small,100,attribute_color1,attribute_size4,1000,0
+product_variation40,product1,product1-green-small,Green - Small,100,attribute_color1,attribute_size5,1000,0
+product_variation41,product1,product1-red-medium,Red - Medium,100,attribute_color2,attribute_size1,1000,0
+product_variation42,product1,product1-red-large,Red - Large,100,attribute_color2,attribute_size2,1000,0
+product_variation43,product1,product1-red-extra_large,Red - Extra Large,100,attribute_color2,attribute_size3,1000,0
+product_variation44,product1,product1-red-extra_small,Red - Extra Small,100,attribute_color2,attribute_size4,1000,0
+product_variation45,product1,product1-red-small,Red - Small,100,attribute_color2,attribute_size5,1000,0
+product_variation46,product1,product1-yellow-medium,Yellow - Medium,100,attribute_color3,attribute_size1,1000,0
+product_variation47,product1,product1-yellow-large,Yellow - Large,100,attribute_color3,attribute_size2,1000,0
+product_variation48,product1,product1-yellow-extra_large,Yellow - Extra Large,100,attribute_color3,attribute_size3,1000,0
+product_variation49,product1,product1-yellow-extra_small,Yellow - Extra Small,100,attribute_color3,attribute_size4,1000,0
+product_variation50,product1,product1-yellow-small,Yellow - Small,100,attribute_color3,attribute_size5,1000,0
+product_variation51,product1,product1-black-medium,Black - Medium,100,attribute_color4,attribute_size1,1000,0
+product_variation52,product1,product1-black-large,Black - Large,100,attribute_color4,attribute_size2,1000,0
+product_variation53,product1,product1-black-extra_large,Black - Extra Large,100,attribute_color4,attribute_size3,1000,0
+product_variation54,product1,product1-black-extra_small,Black - Extra Small,100,attribute_color4,attribute_size4,1000,0
+product_variation55,product1,product1-black-small,Black - Small,100,attribute_color4,attribute_size5,1000,0
+product_variation56,product1,product1-grey-medium,Grey - Medium,100,attribute_color5,attribute_size1,1000,0
+product_variation57,product1,product1-grey-large,Grey - Large,100,attribute_color5,attribute_size2,1000,0
+product_variation58,product1,product1-grey-extra_large,Grey - Extra Large,100,attribute_color5,attribute_size3,1000,0
+product_variation59,product1,product1-grey-extra_small,Grey - Extra Small,100,attribute_color5,attribute_size4,1000,0
+product_variation60,product1,product1-grey-small,Grey - Small,100,attribute_color5,attribute_size5,1000,0
+product_variation61,product1,product1-blue-medium,Blue - Medium,100,attribute_color6,attribute_size1,1000,0
+product_variation62,product1,product1-blue-large,Blue - Large,100,attribute_color6,attribute_size2,1000,0
+product_variation63,product1,product1-blue-extra_large,Blue - Extra Large,100,attribute_color6,attribute_size3,1000,0
+product_variation64,product1,product1-blue-extra_small,Blue - Extra Small,100,attribute_color6,attribute_size4,1000,0
+product_variation65,product1,product1-blue-small,Blue - Small,100,attribute_color6,attribute_size5,1000,0
+product_variation66,product1,product1-yellow-medium,Yellow - Medium,100,attribute_color7,attribute_size1,1000,0
+product_variation67,product1,product1-yellow-large,Yellow - Large,100,attribute_color7,attribute_size2,1000,0
+product_variation68,product1,product1-yellow-extra_large,Yellow - Extra Large,100,attribute_color7,attribute_size3,1000,0
+product_variation69,product1,product1-yellow-extra_small,Yellow - Extra Small,100,attribute_color7,attribute_size4,1000,0
+product_variation70,product1,product1-yellow-small,Yellow - Small,100,attribute_color7,attribute_size5,1000,0
+product_variation71,product2,product2-green-medium,Green - Medium,100,attribute_color1,attribute_size1,1000,0
+product_variation72,product2,product2-green-large,Green - Large,100,attribute_color1,attribute_size2,1000,0
+product_variation73,product2,product2-green-extra_large,Green - Extra Large,100,attribute_color1,attribute_size3,1000,0
+product_variation74,product2,product2-green-extra_small,Green - Extra Small,100,attribute_color1,attribute_size4,1000,0
+product_variation75,product2,product2-green-small,Green - Small,100,attribute_color1,attribute_size5,1000,0
+product_variation76,product2,product2-red-medium,Red - Medium,100,attribute_color2,attribute_size1,1000,0
+product_variation77,product2,product2-red-large,Red - Large,100,attribute_color2,attribute_size2,1000,0
+product_variation78,product2,product2-red-extra_large,Red - Extra Large,100,attribute_color2,attribute_size3,1000,0
+product_variation79,product2,product2-red-extra_small,Red - Extra Small,100,attribute_color2,attribute_size4,1000,0
+product_variation80,product2,product2-red-small,Red - Small,100,attribute_color2,attribute_size5,1000,0
+product_variation81,product2,product2-yellow-medium,Yellow - Medium,100,attribute_color3,attribute_size1,1000,0
+product_variation82,product2,product2-yellow-large,Yellow - Large,100,attribute_color3,attribute_size2,1000,0
+product_variation83,product2,product2-yellow-extra_large,Yellow - Extra Large,100,attribute_color3,attribute_size3,1000,0
+product_variation84,product2,product2-yellow-extra_small,Yellow - Extra Small,100,attribute_color3,attribute_size4,1000,0
+product_variation85,product2,product2-yellow-small,Yellow - Small,100,attribute_color3,attribute_size5,1000,0
+product_variation86,product2,product2-black-medium,Black - Medium,100,attribute_color4,attribute_size1,1000,0
+product_variation87,product2,product2-black-large,Black - Large,100,attribute_color4,attribute_size2,1000,0
+product_variation88,product2,product2-black-extra_large,Black - Extra Large,100,attribute_color4,attribute_size3,1000,0
+product_variation89,product2,product2-black-extra_small,Black - Extra Small,100,attribute_color4,attribute_size4,1000,0
+product_variation90,product2,product2-black-small,Black - Small,100,attribute_color4,attribute_size5,1000,0
+product_variation91,product2,product2-grey-medium,Grey - Medium,100,attribute_color5,attribute_size1,1000,0
+product_variation92,product2,product2-grey-large,Grey - Large,100,attribute_color5,attribute_size2,1000,0
+product_variation93,product2,product2-grey-extra_large,Grey - Extra Large,100,attribute_color5,attribute_size3,1000,0
+product_variation94,product2,product2-grey-extra_small,Grey - Extra Small,100,attribute_color5,attribute_size4,1000,0
+product_variation95,product2,product2-grey-small,Grey - Small,100,attribute_color5,attribute_size5,1000,0
+product_variation96,product2,product2-blue-medium,Blue - Medium,100,attribute_color6,attribute_size1,1000,0
+product_variation97,product2,product2-blue-large,Blue - Large,100,attribute_color6,attribute_size2,1000,0
+product_variation98,product2,product2-blue-extra_large,Blue - Extra Large,100,attribute_color6,attribute_size3,1000,0
+product_variation99,product2,product2-blue-extra_small,Blue - Extra Small,100,attribute_color6,attribute_size4,1000,0
+product_variation100,product2,product2-blue-small,Blue - Small,100,attribute_color6,attribute_size5,1000,0
+product_variation101,product2,product2-yellow-medium,Yellow - Medium,100,attribute_color7,attribute_size1,1000,0
+product_variation102,product2,product2-yellow-large,Yellow - Large,100,attribute_color7,attribute_size2,1000,0
+product_variation103,product2,product2-yellow-extra_large,Yellow - Extra Large,100,attribute_color7,attribute_size3,1000,0
+product_variation104,product2,product2-yellow-extra_small,Yellow - Extra Small,100,attribute_color7,attribute_size4,1000,0
+product_variation105,product2,product2-yellow-small,Yellow - Small,100,attribute_color7,attribute_size5,1000,0
+product_variation106,product3,product3-green-medium,Green - Medium,100,attribute_color1,attribute_size1,1000,0
+product_variation107,product3,product3-green-large,Green - Large,100,attribute_color1,attribute_size2,1000,0
+product_variation108,product3,product3-green-extra_large,Green - Extra Large,100,attribute_color1,attribute_size3,1000,0
+product_variation109,product3,product3-green-extra_small,Green - Extra Small,100,attribute_color1,attribute_size4,1000,0
+product_variation110,product3,product3-green-small,Green - Small,100,attribute_color1,attribute_size5,1000,0
+product_variation111,product3,product3-red-medium,Red - Medium,100,attribute_color2,attribute_size1,1000,0
+product_variation112,product3,product3-red-large,Red - Large,100,attribute_color2,attribute_size2,1000,0
+product_variation113,product3,product3-red-extra_large,Red - Extra Large,100,attribute_color2,attribute_size3,1000,0
+product_variation114,product3,product3-red-extra_small,Red - Extra Small,100,attribute_color2,attribute_size4,1000,0
+product_variation115,product3,product3-red-small,Red - Small,100,attribute_color2,attribute_size5,1000,0
+product_variation116,product3,product3-yellow-medium,Yellow - Medium,100,attribute_color3,attribute_size1,1000,0
+product_variation117,product3,product3-yellow-large,Yellow - Large,100,attribute_color3,attribute_size2,1000,0
+product_variation118,product3,product3-yellow-extra_large,Yellow - Extra Large,100,attribute_color3,attribute_size3,1000,0
+product_variation119,product3,product3-yellow-extra_small,Yellow - Extra Small,100,attribute_color3,attribute_size4,1000,0
+product_variation120,product3,product3-yellow-small,Yellow - Small,100,attribute_color3,attribute_size5,1000,0
+product_variation121,product3,product3-black-medium,Black - Medium,100,attribute_color4,attribute_size1,1000,0
+product_variation122,product3,product3-black-large,Black - Large,100,attribute_color4,attribute_size2,1000,0
+product_variation123,product3,product3-black-extra_large,Black - Extra Large,100,attribute_color4,attribute_size3,1000,0
+product_variation124,product3,product3-black-extra_small,Black - Extra Small,100,attribute_color4,attribute_size4,1000,0
+product_variation125,product3,product3-black-small,Black - Small,100,attribute_color4,attribute_size5,1000,0
+product_variation126,product3,product3-grey-medium,Grey - Medium,100,attribute_color5,attribute_size1,1000,0
+product_variation127,product3,product3-grey-large,Grey - Large,100,attribute_color5,attribute_size2,1000,0
+product_variation128,product3,product3-grey-extra_large,Grey - Extra Large,100,attribute_color5,attribute_size3,1000,0
+product_variation129,product3,product3-grey-extra_small,Grey - Extra Small,100,attribute_color5,attribute_size4,1000,0
+product_variation130,product3,product3-grey-small,Grey - Small,100,attribute_color5,attribute_size5,1000,0
+product_variation131,product3,product3-blue-medium,Blue - Medium,100,attribute_color6,attribute_size1,1000,0
+product_variation132,product3,product3-blue-large,Blue - Large,100,attribute_color6,attribute_size2,1000,0
+product_variation133,product3,product3-blue-extra_large,Blue - Extra Large,100,attribute_color6,attribute_size3,1000,0
+product_variation134,product3,product3-blue-extra_small,Blue - Extra Small,100,attribute_color6,attribute_size4,1000,0
+product_variation135,product3,product3-blue-small,Blue - Small,100,attribute_color6,attribute_size5,1000,0
+product_variation136,product3,product3-yellow-medium,Yellow - Medium,100,attribute_color7,attribute_size1,1000,0
+product_variation137,product3,product3-yellow-large,Yellow - Large,100,attribute_color7,attribute_size2,1000,0
+product_variation138,product3,product3-yellow-extra_large,Yellow - Extra Large,100,attribute_color7,attribute_size3,1000,0
+product_variation139,product3,product3-yellow-extra_small,Yellow - Extra Small,100,attribute_color7,attribute_size4,1000,0
+product_variation140,product3,product3-yellow-small,Yellow - Small,100,attribute_color7,attribute_size5,1000,0
+product_variation141,product4,product4-green-medium,Green - Medium,100,attribute_color1,attribute_size1,1000,0
+product_variation142,product4,product4-green-large,Green - Large,100,attribute_color1,attribute_size2,1000,0
+product_variation143,product4,product4-green-extra_large,Green - Extra Large,100,attribute_color1,attribute_size3,1000,0
+product_variation144,product4,product4-green-extra_small,Green - Extra Small,100,attribute_color1,attribute_size4,1000,0
+product_variation145,product4,product4-green-small,Green - Small,100,attribute_color1,attribute_size5,1000,0
+product_variation146,product4,product4-red-medium,Red - Medium,100,attribute_color2,attribute_size1,1000,0
+product_variation147,product4,product4-red-large,Red - Large,100,attribute_color2,attribute_size2,1000,0
+product_variation148,product4,product4-red-extra_large,Red - Extra Large,100,attribute_color2,attribute_size3,1000,0
+product_variation149,product4,product4-red-extra_small,Red - Extra Small,100,attribute_color2,attribute_size4,1000,0
+product_variation150,product4,product4-red-small,Red - Small,100,attribute_color2,attribute_size5,1000,0
+product_variation151,product4,product4-yellow-medium,Yellow - Medium,100,attribute_color3,attribute_size1,1000,0
+product_variation152,product4,product4-yellow-large,Yellow - Large,100,attribute_color3,attribute_size2,1000,0
+product_variation153,product4,product4-yellow-extra_large,Yellow - Extra Large,100,attribute_color3,attribute_size3,1000,0
+product_variation154,product4,product4-yellow-extra_small,Yellow - Extra Small,100,attribute_color3,attribute_size4,1000,0
+product_variation155,product4,product4-yellow-small,Yellow - Small,100,attribute_color3,attribute_size5,1000,0
+product_variation156,product4,product4-black-medium,Black - Medium,100,attribute_color4,attribute_size1,1000,0
+product_variation157,product4,product4-black-large,Black - Large,100,attribute_color4,attribute_size2,1000,0
+product_variation158,product4,product4-black-extra_large,Black - Extra Large,100,attribute_color4,attribute_size3,1000,0
+product_variation159,product4,product4-black-extra_small,Black - Extra Small,100,attribute_color4,attribute_size4,1000,0
+product_variation160,product4,product4-black-small,Black - Small,100,attribute_color4,attribute_size5,1000,0
+product_variation161,product4,product4-grey-medium,Grey - Medium,100,attribute_color5,attribute_size1,1000,0
+product_variation162,product4,product4-grey-large,Grey - Large,100,attribute_color5,attribute_size2,1000,0
+product_variation163,product4,product4-grey-extra_large,Grey - Extra Large,100,attribute_color5,attribute_size3,1000,0
+product_variation164,product4,product4-grey-extra_small,Grey - Extra Small,100,attribute_color5,attribute_size4,1000,0
+product_variation165,product4,product4-grey-small,Grey - Small,100,attribute_color5,attribute_size5,1000,0
+product_variation166,product4,product4-blue-medium,Blue - Medium,100,attribute_color6,attribute_size1,1000,0
+product_variation167,product4,product4-blue-large,Blue - Large,100,attribute_color6,attribute_size2,1000,0
+product_variation168,product4,product4-blue-extra_large,Blue - Extra Large,100,attribute_color6,attribute_size3,1000,0
+product_variation169,product4,product4-blue-extra_small,Blue - Extra Small,100,attribute_color6,attribute_size4,1000,0
+product_variation170,product4,product4-blue-small,Blue - Small,100,attribute_color6,attribute_size5,1000,0
+product_variation171,product4,product4-yellow-medium,Yellow - Medium,100,attribute_color7,attribute_size1,1000,0
+product_variation172,product4,product4-yellow-large,Yellow - Large,100,attribute_color7,attribute_size2,1000,0
+product_variation173,product4,product4-yellow-extra_large,Yellow - Extra Large,100,attribute_color7,attribute_size3,1000,0
+product_variation174,product4,product4-yellow-extra_small,Yellow - Extra Small,100,attribute_color7,attribute_size4,1000,0
+product_variation175,product4,product4-yellow-small,Yellow - Small,100,attribute_color7,attribute_size5,1000,0
+product_variation176,product5,product5-green-medium,Green - Medium,100,attribute_color1,attribute_size1,1000,0
+product_variation177,product5,product5-green-large,Green - Large,100,attribute_color1,attribute_size2,1000,0
+product_variation178,product5,product5-green-extra_large,Green - Extra Large,100,attribute_color1,attribute_size3,1000,0
+product_variation179,product5,product5-green-extra_small,Green - Extra Small,100,attribute_color1,attribute_size4,1000,0
+product_variation180,product5,product5-green-small,Green - Small,100,attribute_color1,attribute_size5,1000,0
+product_variation181,product5,product5-red-medium,Red - Medium,100,attribute_color2,attribute_size1,1000,0
+product_variation182,product5,product5-red-large,Red - Large,100,attribute_color2,attribute_size2,1000,0
+product_variation183,product5,product5-red-extra_large,Red - Extra Large,100,attribute_color2,attribute_size3,1000,0
+product_variation184,product5,product5-red-extra_small,Red - Extra Small,100,attribute_color2,attribute_size4,1000,0
+product_variation185,product5,product5-red-small,Red - Small,100,attribute_color2,attribute_size5,1000,0
+product_variation186,product5,product5-yellow-medium,Yellow - Medium,100,attribute_color3,attribute_size1,1000,0
+product_variation187,product5,product5-yellow-large,Yellow - Large,100,attribute_color3,attribute_size2,1000,0
+product_variation188,product5,product5-yellow-extra_large,Yellow - Extra Large,100,attribute_color3,attribute_size3,1000,0
+product_variation189,product5,product5-yellow-extra_small,Yellow - Extra Small,100,attribute_color3,attribute_size4,1000,0
+product_variation190,product5,product5-yellow-small,Yellow - Small,100,attribute_color3,attribute_size5,1000,0
+product_variation191,product5,product5-black-medium,Black - Medium,100,attribute_color4,attribute_size1,1000,0
+product_variation192,product5,product5-black-large,Black - Large,100,attribute_color4,attribute_size2,1000,0
+product_variation193,product5,product5-black-extra_large,Black - Extra Large,100,attribute_color4,attribute_size3,1000,0
+product_variation194,product5,product5-black-extra_small,Black - Extra Small,100,attribute_color4,attribute_size4,1000,0
+product_variation195,product5,product5-black-small,Black - Small,100,attribute_color4,attribute_size5,1000,0
+product_variation196,product5,product5-grey-medium,Grey - Medium,100,attribute_color5,attribute_size1,1000,0
+product_variation197,product5,product5-grey-large,Grey - Large,100,attribute_color5,attribute_size2,1000,0
+product_variation198,product5,product5-grey-extra_large,Grey - Extra Large,100,attribute_color5,attribute_size3,1000,0
+product_variation199,product5,product5-grey-extra_small,Grey - Extra Small,100,attribute_color5,attribute_size4,1000,0
+product_variation200,product5,product5-grey-small,Grey - Small,100,attribute_color5,attribute_size5,1000,0
+product_variation201,product5,product5-blue-medium,Blue - Medium,100,attribute_color6,attribute_size1,1000,0
+product_variation202,product5,product5-blue-large,Blue - Large,100,attribute_color6,attribute_size2,1000,0
+product_variation203,product5,product5-blue-extra_large,Blue - Extra Large,100,attribute_color6,attribute_size3,1000,0
+product_variation204,product5,product5-blue-extra_small,Blue - Extra Small,100,attribute_color6,attribute_size4,1000,0
+product_variation205,product5,product5-blue-small,Blue - Small,100,attribute_color6,attribute_size5,1000,0
+product_variation206,product5,product5-yellow-medium,Yellow - Medium,100,attribute_color7,attribute_size1,1000,0
+product_variation207,product5,product5-yellow-large,Yellow - Large,100,attribute_color7,attribute_size2,1000,0
+product_variation208,product5,product5-yellow-extra_large,Yellow - Extra Large,100,attribute_color7,attribute_size3,1000,0
+product_variation209,product5,product5-yellow-extra_small,Yellow - Extra Small,100,attribute_color7,attribute_size4,1000,0
+product_variation210,product5,product5-yellow-small,Yellow - Small,100,attribute_color7,attribute_size5,1000,0
+product_variation211,product6,product6-green-medium,Green - Medium,100,attribute_color1,attribute_size1,1000,0
+product_variation212,product6,product6-green-large,Green - Large,100,attribute_color1,attribute_size2,1000,0
+product_variation213,product6,product6-green-extra_large,Green - Extra Large,100,attribute_color1,attribute_size3,1000,0
+product_variation214,product6,product6-green-extra_small,Green - Extra Small,100,attribute_color1,attribute_size4,1000,0
+product_variation215,product6,product6-green-small,Green - Small,100,attribute_color1,attribute_size5,1000,0
+product_variation216,product6,product6-red-medium,Red - Medium,100,attribute_color2,attribute_size1,1000,0
+product_variation217,product6,product6-red-large,Red - Large,100,attribute_color2,attribute_size2,1000,0
+product_variation218,product6,product6-red-extra_large,Red - Extra Large,100,attribute_color2,attribute_size3,1000,0
+product_variation219,product6,product6-red-extra_small,Red - Extra Small,100,attribute_color2,attribute_size4,1000,0
+product_variation220,product6,product6-red-small,Red - Small,100,attribute_color2,attribute_size5,1000,0
+product_variation221,product6,product6-yellow-medium,Yellow - Medium,100,attribute_color3,attribute_size1,1000,0
+product_variation222,product6,product6-yellow-large,Yellow - Large,100,attribute_color3,attribute_size2,1000,0
+product_variation223,product6,product6-yellow-extra_large,Yellow - Extra Large,100,attribute_color3,attribute_size3,1000,0
+product_variation224,product6,product6-yellow-extra_small,Yellow - Extra Small,100,attribute_color3,attribute_size4,1000,0
+product_variation225,product6,product6-yellow-small,Yellow - Small,100,attribute_color3,attribute_size5,1000,0
+product_variation226,product6,product6-black-medium,Black - Medium,100,attribute_color4,attribute_size1,1000,0
+product_variation227,product6,product6-black-large,Black - Large,100,attribute_color4,attribute_size2,1000,0
+product_variation228,product6,product6-black-extra_large,Black - Extra Large,100,attribute_color4,attribute_size3,1000,0
+product_variation229,product6,product6-black-extra_small,Black - Extra Small,100,attribute_color4,attribute_size4,1000,0
+product_variation230,product6,product6-black-small,Black - Small,100,attribute_color4,attribute_size5,1000,0
+product_variation231,product6,product6-grey-medium,Grey - Medium,100,attribute_color5,attribute_size1,1000,0
+product_variation232,product6,product6-grey-large,Grey - Large,100,attribute_color5,attribute_size2,1000,0
+product_variation233,product6,product6-grey-extra_large,Grey - Extra Large,100,attribute_color5,attribute_size3,1000,0
+product_variation234,product6,product6-grey-extra_small,Grey - Extra Small,100,attribute_color5,attribute_size4,1000,0
+product_variation235,product6,product6-grey-small,Grey - Small,100,attribute_color5,attribute_size5,1000,0
+product_variation236,product6,product6-blue-medium,Blue - Medium,100,attribute_color6,attribute_size1,1000,0
+product_variation237,product6,product6-blue-large,Blue - Large,100,attribute_color6,attribute_size2,1000,0
+product_variation238,product6,product6-blue-extra_large,Blue - Extra Large,100,attribute_color6,attribute_size3,1000,0
+product_variation239,product6,product6-blue-extra_small,Blue - Extra Small,100,attribute_color6,attribute_size4,1000,0
+product_variation240,product6,product6-blue-small,Blue - Small,100,attribute_color6,attribute_size5,1000,0
+product_variation241,product6,product6-yellow-medium,Yellow - Medium,100,attribute_color7,attribute_size1,1000,0
+product_variation242,product6,product6-yellow-large,Yellow - Large,100,attribute_color7,attribute_size2,1000,0
+product_variation243,product6,product6-yellow-extra_large,Yellow - Extra Large,100,attribute_color7,attribute_size3,1000,0
+product_variation244,product6,product6-yellow-extra_small,Yellow - Extra Small,100,attribute_color7,attribute_size4,1000,0
+product_variation245,product6,product6-yellow-small,Yellow - Small,100,attribute_color7,attribute_size5,1000,0
+product_variation246,product7,product7-green-medium,Green - Medium,100,attribute_color1,attribute_size1,1000,0
+product_variation247,product7,product7-green-large,Green - Large,100,attribute_color1,attribute_size2,1000,0
+product_variation248,product7,product7-green-extra_large,Green - Extra Large,100,attribute_color1,attribute_size3,1000,0
+product_variation249,product7,product7-green-extra_small,Green - Extra Small,100,attribute_color1,attribute_size4,1000,0
+product_variation250,product7,product7-green-small,Green - Small,100,attribute_color1,attribute_size5,1000,0
+product_variation251,product7,product7-red-medium,Red - Medium,100,attribute_color2,attribute_size1,1000,0
+product_variation252,product7,product7-red-large,Red - Large,100,attribute_color2,attribute_size2,1000,0
+product_variation253,product7,product7-red-extra_large,Red - Extra Large,100,attribute_color2,attribute_size3,1000,0
+product_variation254,product7,product7-red-extra_small,Red - Extra Small,100,attribute_color2,attribute_size4,1000,0
+product_variation255,product7,product7-red-small,Red - Small,100,attribute_color2,attribute_size5,1000,0
+product_variation256,product7,product7-yellow-medium,Yellow - Medium,100,attribute_color3,attribute_size1,1000,0
+product_variation257,product7,product7-yellow-large,Yellow - Large,100,attribute_color3,attribute_size2,1000,0
+product_variation258,product7,product7-yellow-extra_large,Yellow - Extra Large,100,attribute_color3,attribute_size3,1000,0
+product_variation259,product7,product7-yellow-extra_small,Yellow - Extra Small,100,attribute_color3,attribute_size4,1000,0
+product_variation260,product7,product7-yellow-small,Yellow - Small,100,attribute_color3,attribute_size5,1000,0
+product_variation261,product7,product7-black-medium,Black - Medium,100,attribute_color4,attribute_size1,1000,0
+product_variation262,product7,product7-black-large,Black - Large,100,attribute_color4,attribute_size2,1000,0
+product_variation263,product7,product7-black-extra_large,Black - Extra Large,100,attribute_color4,attribute_size3,1000,0
+product_variation264,product7,product7-black-extra_small,Black - Extra Small,100,attribute_color4,attribute_size4,1000,0
+product_variation265,product7,product7-black-small,Black - Small,100,attribute_color4,attribute_size5,1000,0
+product_variation266,product7,product7-grey-medium,Grey - Medium,100,attribute_color5,attribute_size1,1000,0
+product_variation267,product7,product7-grey-large,Grey - Large,100,attribute_color5,attribute_size2,1000,0
+product_variation268,product7,product7-grey-extra_large,Grey - Extra Large,100,attribute_color5,attribute_size3,1000,0
+product_variation269,product7,product7-grey-extra_small,Grey - Extra Small,100,attribute_color5,attribute_size4,1000,0
+product_variation270,product7,product7-grey-small,Grey - Small,100,attribute_color5,attribute_size5,1000,0
+product_variation271,product7,product7-blue-medium,Blue - Medium,100,attribute_color6,attribute_size1,1000,0
+product_variation272,product7,product7-blue-large,Blue - Large,100,attribute_color6,attribute_size2,1000,0
+product_variation273,product7,product7-blue-extra_large,Blue - Extra Large,100,attribute_color6,attribute_size3,1000,0
+product_variation274,product7,product7-blue-extra_small,Blue - Extra Small,100,attribute_color6,attribute_size4,1000,0
+product_variation275,product7,product7-blue-small,Blue - Small,100,attribute_color6,attribute_size5,1000,0
+product_variation276,product7,product7-yellow-medium,Yellow - Medium,100,attribute_color7,attribute_size1,1000,0
+product_variation277,product7,product7-yellow-large,Yellow - Large,100,attribute_color7,attribute_size2,1000,0
+product_variation278,product7,product7-yellow-extra_large,Yellow - Extra Large,100,attribute_color7,attribute_size3,1000,0
+product_variation279,product7,product7-yellow-extra_small,Yellow - Extra Small,100,attribute_color7,attribute_size4,1000,0
+product_variation280,product7,product7-yellow-small,Yellow - Small,100,attribute_color7,attribute_size5,1000,0
+product_variation281,product8,product8-green-medium,Green - Medium,100,attribute_color1,attribute_size1,1000,0
+product_variation282,product8,product8-green-large,Green - Large,100,attribute_color1,attribute_size2,1000,0
+product_variation283,product8,product8-green-extra_large,Green - Extra Large,100,attribute_color1,attribute_size3,1000,0
+product_variation284,product8,product8-green-extra_small,Green - Extra Small,100,attribute_color1,attribute_size4,1000,0
+product_variation285,product8,product8-green-small,Green - Small,100,attribute_color1,attribute_size5,1000,0
+product_variation286,product8,product8-red-medium,Red - Medium,100,attribute_color2,attribute_size1,1000,0
+product_variation287,product8,product8-red-large,Red - Large,100,attribute_color2,attribute_size2,1000,0
+product_variation288,product8,product8-red-extra_large,Red - Extra Large,100,attribute_color2,attribute_size3,1000,0
+product_variation289,product8,product8-red-extra_small,Red - Extra Small,100,attribute_color2,attribute_size4,1000,0
+product_variation290,product8,product8-red-small,Red - Small,100,attribute_color2,attribute_size5,1000,0
+product_variation291,product8,product8-yellow-medium,Yellow - Medium,100,attribute_color3,attribute_size1,1000,0
+product_variation292,product8,product8-yellow-large,Yellow - Large,100,attribute_color3,attribute_size2,1000,0
+product_variation293,product8,product8-yellow-extra_large,Yellow - Extra Large,100,attribute_color3,attribute_size3,1000,0
+product_variation294,product8,product8-yellow-extra_small,Yellow - Extra Small,100,attribute_color3,attribute_size4,1000,0
+product_variation295,product8,product8-yellow-small,Yellow - Small,100,attribute_color3,attribute_size5,1000,0
+product_variation296,product8,product8-black-medium,Black - Medium,100,attribute_color4,attribute_size1,1000,0
+product_variation297,product8,product8-black-large,Black - Large,100,attribute_color4,attribute_size2,1000,0
+product_variation298,product8,product8-black-extra_large,Black - Extra Large,100,attribute_color4,attribute_size3,1000,0
+product_variation299,product8,product8-black-extra_small,Black - Extra Small,100,attribute_color4,attribute_size4,1000,0
+product_variation300,product8,product8-black-small,Black - Small,100,attribute_color4,attribute_size5,1000,0
+product_variation301,product8,product8-grey-medium,Grey - Medium,100,attribute_color5,attribute_size1,1000,0
+product_variation302,product8,product8-grey-large,Grey - Large,100,attribute_color5,attribute_size2,1000,0
+product_variation303,product8,product8-grey-extra_large,Grey - Extra Large,100,attribute_color5,attribute_size3,1000,0
+product_variation304,product8,product8-grey-extra_small,Grey - Extra Small,100,attribute_color5,attribute_size4,1000,0
+product_variation305,product8,product8-grey-small,Grey - Small,100,attribute_color5,attribute_size5,1000,0
+product_variation306,product8,product8-blue-medium,Blue - Medium,100,attribute_color6,attribute_size1,1000,0
+product_variation307,product8,product8-blue-large,Blue - Large,100,attribute_color6,attribute_size2,1000,0
+product_variation308,product8,product8-blue-extra_large,Blue - Extra Large,100,attribute_color6,attribute_size3,1000,0
+product_variation309,product8,product8-blue-extra_small,Blue - Extra Small,100,attribute_color6,attribute_size4,1000,0
+product_variation310,product8,product8-blue-small,Blue - Small,100,attribute_color6,attribute_size5,1000,0
+product_variation311,product8,product8-yellow-medium,Yellow - Medium,100,attribute_color7,attribute_size1,1000,0
+product_variation312,product8,product8-yellow-large,Yellow - Large,100,attribute_color7,attribute_size2,1000,0
+product_variation313,product8,product8-yellow-extra_large,Yellow - Extra Large,100,attribute_color7,attribute_size3,1000,0
+product_variation314,product8,product8-yellow-extra_small,Yellow - Extra Small,100,attribute_color7,attribute_size4,1000,0
+product_variation315,product8,product8-yellow-small,Yellow - Small,100,attribute_color7,attribute_size5,1000,0
+product_variation316,product9,product9-green-medium,Green - Medium,100,attribute_color1,attribute_size1,1000,0
+product_variation317,product9,product9-green-large,Green - Large,100,attribute_color1,attribute_size2,1000,0
+product_variation318,product9,product9-green-extra_large,Green - Extra Large,100,attribute_color1,attribute_size3,1000,0
+product_variation319,product9,product9-green-extra_small,Green - Extra Small,100,attribute_color1,attribute_size4,1000,0
+product_variation320,product9,product9-green-small,Green - Small,100,attribute_color1,attribute_size5,1000,0
+product_variation321,product9,product9-red-medium,Red - Medium,100,attribute_color2,attribute_size1,1000,0
+product_variation322,product9,product9-red-large,Red - Large,100,attribute_color2,attribute_size2,1000,0
+product_variation323,product9,product9-red-extra_large,Red - Extra Large,100,attribute_color2,attribute_size3,1000,0
+product_variation324,product9,product9-red-extra_small,Red - Extra Small,100,attribute_color2,attribute_size4,1000,0
+product_variation325,product9,product9-red-small,Red - Small,100,attribute_color2,attribute_size5,1000,0
+product_variation326,product9,product9-yellow-medium,Yellow - Medium,100,attribute_color3,attribute_size1,1000,0
+product_variation327,product9,product9-yellow-large,Yellow - Large,100,attribute_color3,attribute_size2,1000,0
+product_variation328,product9,product9-yellow-extra_large,Yellow - Extra Large,100,attribute_color3,attribute_size3,1000,0
+product_variation329,product9,product9-yellow-extra_small,Yellow - Extra Small,100,attribute_color3,attribute_size4,1000,0
+product_variation330,product9,product9-yellow-small,Yellow - Small,100,attribute_color3,attribute_size5,1000,0
+product_variation331,product9,product9-black-medium,Black - Medium,100,attribute_color4,attribute_size1,1000,0
+product_variation332,product9,product9-black-large,Black - Large,100,attribute_color4,attribute_size2,1000,0
+product_variation333,product9,product9-black-extra_large,Black - Extra Large,100,attribute_color4,attribute_size3,1000,0
+product_variation334,product9,product9-black-extra_small,Black - Extra Small,100,attribute_color4,attribute_size4,1000,0
+product_variation335,product9,product9-black-small,Black - Small,100,attribute_color4,attribute_size5,1000,0
+product_variation336,product9,product9-grey-medium,Grey - Medium,100,attribute_color5,attribute_size1,1000,0
+product_variation337,product9,product9-grey-large,Grey - Large,100,attribute_color5,attribute_size2,1000,0
+product_variation338,product9,product9-grey-extra_large,Grey - Extra Large,100,attribute_color5,attribute_size3,1000,0
+product_variation339,product9,product9-grey-extra_small,Grey - Extra Small,100,attribute_color5,attribute_size4,1000,0
+product_variation340,product9,product9-grey-small,Grey - Small,100,attribute_color5,attribute_size5,1000,0
+product_variation341,product9,product9-blue-medium,Blue - Medium,100,attribute_color6,attribute_size1,1000,0
+product_variation342,product9,product9-blue-large,Blue - Large,100,attribute_color6,attribute_size2,1000,0
+product_variation343,product9,product9-blue-extra_large,Blue - Extra Large,100,attribute_color6,attribute_size3,1000,0
+product_variation344,product9,product9-blue-extra_small,Blue - Extra Small,100,attribute_color6,attribute_size4,1000,0
+product_variation345,product9,product9-blue-small,Blue - Small,100,attribute_color6,attribute_size5,1000,0
+product_variation346,product9,product9-yellow-medium,Yellow - Medium,100,attribute_color7,attribute_size1,1000,0
+product_variation347,product9,product9-yellow-large,Yellow - Large,100,attribute_color7,attribute_size2,1000,0
+product_variation348,product9,product9-yellow-extra_large,Yellow - Extra Large,100,attribute_color7,attribute_size3,1000,0
+product_variation349,product9,product9-yellow-extra_small,Yellow - Extra Small,100,attribute_color7,attribute_size4,1000,0
+product_variation350,product9,product9-yellow-small,Yellow - Small,100,attribute_color7,attribute_size5,1000,0
+product_variation351,product10,product10-green-medium,Green - Medium,100,attribute_color1,attribute_size1,1000,0
+product_variation352,product10,product10-green-large,Green - Large,100,attribute_color1,attribute_size2,1000,0
+product_variation353,product10,product10-green-extra_large,Green - Extra Large,100,attribute_color1,attribute_size3,1000,0
+product_variation354,product10,product10-green-extra_small,Green - Extra Small,100,attribute_color1,attribute_size4,1000,0
+product_variation355,product10,product10-green-small,Green - Small,100,attribute_color1,attribute_size5,1000,0
+product_variation356,product10,product10-red-medium,Red - Medium,100,attribute_color2,attribute_size1,1000,0
+product_variation357,product10,product10-red-large,Red - Large,100,attribute_color2,attribute_size2,1000,0
+product_variation358,product10,product10-red-extra_large,Red - Extra Large,100,attribute_color2,attribute_size3,1000,0
+product_variation359,product10,product10-red-extra_small,Red - Extra Small,100,attribute_color2,attribute_size4,1000,0
+product_variation360,product10,product10-red-small,Red - Small,100,attribute_color2,attribute_size5,1000,0
+product_variation361,product10,product10-yellow-medium,Yellow - Medium,100,attribute_color3,attribute_size1,1000,0
+product_variation362,product10,product10-yellow-large,Yellow - Large,100,attribute_color3,attribute_size2,1000,0
+product_variation363,product10,product10-yellow-extra_large,Yellow - Extra Large,100,attribute_color3,attribute_size3,1000,0
+product_variation364,product10,product10-yellow-extra_small,Yellow - Extra Small,100,attribute_color3,attribute_size4,1000,0
+product_variation365,product10,product10-yellow-small,Yellow - Small,100,attribute_color3,attribute_size5,1000,0
+product_variation366,product10,product10-black-medium,Black - Medium,100,attribute_color4,attribute_size1,1000,0
+product_variation367,product10,product10-black-large,Black - Large,100,attribute_color4,attribute_size2,1000,0
+product_variation368,product10,product10-black-extra_large,Black - Extra Large,100,attribute_color4,attribute_size3,1000,0
+product_variation369,product10,product10-black-extra_small,Black - Extra Small,100,attribute_color4,attribute_size4,1000,0
+product_variation370,product10,product10-black-small,Black - Small,100,attribute_color4,attribute_size5,1000,0
+product_variation371,product10,product10-grey-medium,Grey - Medium,100,attribute_color5,attribute_size1,1000,0
+product_variation372,product10,product10-grey-large,Grey - Large,100,attribute_color5,attribute_size2,1000,0
+product_variation373,product10,product10-grey-extra_large,Grey - Extra Large,100,attribute_color5,attribute_size3,1000,0
+product_variation374,product10,product10-grey-extra_small,Grey - Extra Small,100,attribute_color5,attribute_size4,1000,0
+product_variation375,product10,product10-grey-small,Grey - Small,100,attribute_color5,attribute_size5,1000,0
+product_variation376,product10,product10-blue-medium,Blue - Medium,100,attribute_color6,attribute_size1,1000,0
+product_variation377,product10,product10-blue-large,Blue - Large,100,attribute_color6,attribute_size2,1000,0
+product_variation378,product10,product10-blue-extra_large,Blue - Extra Large,100,attribute_color6,attribute_size3,1000,0
+product_variation379,product10,product10-blue-extra_small,Blue - Extra Small,100,attribute_color6,attribute_size4,1000,0
+product_variation380,product10,product10-blue-small,Blue - Small,100,attribute_color6,attribute_size5,1000,0
+product_variation381,product10,product10-yellow-medium,Yellow - Medium,100,attribute_color7,attribute_size1,1000,0
+product_variation382,product10,product10-yellow-large,Yellow - Large,100,attribute_color7,attribute_size2,1000,0
+product_variation383,product10,product10-yellow-extra_large,Yellow - Extra Large,100,attribute_color7,attribute_size3,1000,0
+product_variation384,product10,product10-yellow-extra_small,Yellow - Extra Small,100,attribute_color7,attribute_size4,1000,0
+product_variation385,product10,product10-yellow-small,Yellow - Small,100,attribute_color7,attribute_size5,1000,0
+product_variation386,product11,product11-green-medium,Green - Medium,100,attribute_color1,attribute_size1,1000,0
+product_variation387,product11,product11-green-large,Green - Large,100,attribute_color1,attribute_size2,1000,0
+product_variation388,product11,product11-green-extra_large,Green - Extra Large,100,attribute_color1,attribute_size3,1000,0
+product_variation389,product11,product11-green-extra_small,Green - Extra Small,100,attribute_color1,attribute_size4,1000,0
+product_variation390,product11,product11-green-small,Green - Small,100,attribute_color1,attribute_size5,1000,0
+product_variation391,product11,product11-red-medium,Red - Medium,100,attribute_color2,attribute_size1,1000,0
+product_variation392,product11,product11-red-large,Red - Large,100,attribute_color2,attribute_size2,1000,0
+product_variation393,product11,product11-red-extra_large,Red - Extra Large,100,attribute_color2,attribute_size3,1000,0
+product_variation394,product11,product11-red-extra_small,Red - Extra Small,100,attribute_color2,attribute_size4,1000,0
+product_variation395,product11,product11-red-small,Red - Small,100,attribute_color2,attribute_size5,1000,0
+product_variation396,product11,product11-yellow-medium,Yellow - Medium,100,attribute_color3,attribute_size1,1000,0
+product_variation397,product11,product11-yellow-large,Yellow - Large,100,attribute_color3,attribute_size2,1000,0
+product_variation398,product11,product11-yellow-extra_large,Yellow - Extra Large,100,attribute_color3,attribute_size3,1000,0
+product_variation399,product11,product11-yellow-extra_small,Yellow - Extra Small,100,attribute_color3,attribute_size4,1000,0
+product_variation400,product11,product11-yellow-small,Yellow - Small,100,attribute_color3,attribute_size5,1000,0
+product_variation401,product11,product11-black-medium,Black - Medium,100,attribute_color4,attribute_size1,1000,0
+product_variation402,product11,product11-black-large,Black - Large,100,attribute_color4,attribute_size2,1000,0
+product_variation403,product11,product11-black-extra_large,Black - Extra Large,100,attribute_color4,attribute_size3,1000,0
+product_variation404,product11,product11-black-extra_small,Black - Extra Small,100,attribute_color4,attribute_size4,1000,0
+product_variation405,product11,product11-black-small,Black - Small,100,attribute_color4,attribute_size5,1000,0
+product_variation406,product11,product11-grey-medium,Grey - Medium,100,attribute_color5,attribute_size1,1000,0
+product_variation407,product11,product11-grey-large,Grey - Large,100,attribute_color5,attribute_size2,1000,0
+product_variation408,product11,product11-grey-extra_large,Grey - Extra Large,100,attribute_color5,attribute_size3,1000,0
+product_variation409,product11,product11-grey-extra_small,Grey - Extra Small,100,attribute_color5,attribute_size4,1000,0
+product_variation410,product11,product11-grey-small,Grey - Small,100,attribute_color5,attribute_size5,1000,0
+product_variation411,product11,product11-blue-medium,Blue - Medium,100,attribute_color6,attribute_size1,1000,0
+product_variation412,product11,product11-blue-large,Blue - Large,100,attribute_color6,attribute_size2,1000,0
+product_variation413,product11,product11-blue-extra_large,Blue - Extra Large,100,attribute_color6,attribute_size3,1000,0
+product_variation414,product11,product11-blue-extra_small,Blue - Extra Small,100,attribute_color6,attribute_size4,1000,0
+product_variation415,product11,product11-blue-small,Blue - Small,100,attribute_color6,attribute_size5,1000,0
+product_variation416,product11,product11-yellow-medium,Yellow - Medium,100,attribute_color7,attribute_size1,1000,0
+product_variation417,product11,product11-yellow-large,Yellow - Large,100,attribute_color7,attribute_size2,1000,0
+product_variation418,product11,product11-yellow-extra_large,Yellow - Extra Large,100,attribute_color7,attribute_size3,1000,0
+product_variation419,product11,product11-yellow-extra_small,Yellow - Extra Small,100,attribute_color7,attribute_size4,1000,0
+product_variation420,product11,product11-yellow-small,Yellow - Small,100,attribute_color7,attribute_size5,1000,0
+product_variation421,product12,product12-green-medium,Green - Medium,100,attribute_color1,attribute_size1,1000,0
+product_variation422,product12,product12-green-large,Green - Large,100,attribute_color1,attribute_size2,1000,0
+product_variation423,product12,product12-green-extra_large,Green - Extra Large,100,attribute_color1,attribute_size3,1000,0
+product_variation424,product12,product12-green-extra_small,Green - Extra Small,100,attribute_color1,attribute_size4,1000,0
+product_variation425,product12,product12-green-small,Green - Small,100,attribute_color1,attribute_size5,1000,0
+product_variation426,product12,product12-red-medium,Red - Medium,100,attribute_color2,attribute_size1,1000,0
+product_variation427,product12,product12-red-large,Red - Large,100,attribute_color2,attribute_size2,1000,0
+product_variation428,product12,product12-red-extra_large,Red - Extra Large,100,attribute_color2,attribute_size3,1000,0
+product_variation429,product12,product12-red-extra_small,Red - Extra Small,100,attribute_color2,attribute_size4,1000,0
+product_variation430,product12,product12-red-small,Red - Small,100,attribute_color2,attribute_size5,1000,0
+product_variation431,product12,product12-yellow-medium,Yellow - Medium,100,attribute_color3,attribute_size1,1000,0
+product_variation432,product12,product12-yellow-large,Yellow - Large,100,attribute_color3,attribute_size2,1000,0
+product_variation433,product12,product12-yellow-extra_large,Yellow - Extra Large,100,attribute_color3,attribute_size3,1000,0
+product_variation434,product12,product12-yellow-extra_small,Yellow - Extra Small,100,attribute_color3,attribute_size4,1000,0
+product_variation435,product12,product12-yellow-small,Yellow - Small,100,attribute_color3,attribute_size5,1000,0
+product_variation436,product12,product12-black-medium,Black - Medium,100,attribute_color4,attribute_size1,1000,0
+product_variation437,product12,product12-black-large,Black - Large,100,attribute_color4,attribute_size2,1000,0
+product_variation438,product12,product12-black-extra_large,Black - Extra Large,100,attribute_color4,attribute_size3,1000,0
+product_variation439,product12,product12-black-extra_small,Black - Extra Small,100,attribute_color4,attribute_size4,1000,0
+product_variation440,product12,product12-black-small,Black - Small,100,attribute_color4,attribute_size5,1000,0
+product_variation441,product12,product12-grey-medium,Grey - Medium,100,attribute_color5,attribute_size1,1000,0
+product_variation442,product12,product12-grey-large,Grey - Large,100,attribute_color5,attribute_size2,1000,0
+product_variation443,product12,product12-grey-extra_large,Grey - Extra Large,100,attribute_color5,attribute_size3,1000,0
+product_variation444,product12,product12-grey-extra_small,Grey - Extra Small,100,attribute_color5,attribute_size4,1000,0
+product_variation445,product12,product12-grey-small,Grey - Small,100,attribute_color5,attribute_size5,1000,0
+product_variation446,product12,product12-blue-medium,Blue - Medium,100,attribute_color6,attribute_size1,1000,0
+product_variation447,product12,product12-blue-large,Blue - Large,100,attribute_color6,attribute_size2,1000,0
+product_variation448,product12,product12-blue-extra_large,Blue - Extra Large,100,attribute_color6,attribute_size3,1000,0
+product_variation449,product12,product12-blue-extra_small,Blue - Extra Small,100,attribute_color6,attribute_size4,1000,0
+product_variation450,product12,product12-blue-small,Blue - Small,100,attribute_color6,attribute_size5,1000,0
+product_variation451,product12,product12-yellow-medium,Yellow - Medium,100,attribute_color7,attribute_size1,1000,0
+product_variation452,product12,product12-yellow-large,Yellow - Large,100,attribute_color7,attribute_size2,1000,0
+product_variation453,product12,product12-yellow-extra_large,Yellow - Extra Large,100,attribute_color7,attribute_size3,1000,0
+product_variation454,product12,product12-yellow-extra_small,Yellow - Extra Small,100,attribute_color7,attribute_size4,1000,0
+product_variation455,product12,product12-yellow-small,Yellow - Small,100,attribute_color7,attribute_size5,1000,0
+product_variation456,product13,product13-green-medium,Green - Medium,100,attribute_color1,attribute_size1,1000,0
+product_variation457,product13,product13-green-large,Green - Large,100,attribute_color1,attribute_size2,1000,0
+product_variation458,product13,product13-green-extra_large,Green - Extra Large,100,attribute_color1,attribute_size3,1000,0
+product_variation459,product13,product13-green-extra_small,Green - Extra Small,100,attribute_color1,attribute_size4,1000,0
+product_variation460,product13,product13-green-small,Green - Small,100,attribute_color1,attribute_size5,1000,0
+product_variation461,product13,product13-red-medium,Red - Medium,100,attribute_color2,attribute_size1,1000,0
+product_variation462,product13,product13-red-large,Red - Large,100,attribute_color2,attribute_size2,1000,0
+product_variation463,product13,product13-red-extra_large,Red - Extra Large,100,attribute_color2,attribute_size3,1000,0
+product_variation464,product13,product13-red-extra_small,Red - Extra Small,100,attribute_color2,attribute_size4,1000,0
+product_variation465,product13,product13-red-small,Red - Small,100,attribute_color2,attribute_size5,1000,0
+product_variation466,product13,product13-yellow-medium,Yellow - Medium,100,attribute_color3,attribute_size1,1000,0
+product_variation467,product13,product13-yellow-large,Yellow - Large,100,attribute_color3,attribute_size2,1000,0
+product_variation468,product13,product13-yellow-extra_large,Yellow - Extra Large,100,attribute_color3,attribute_size3,1000,0
+product_variation469,product13,product13-yellow-extra_small,Yellow - Extra Small,100,attribute_color3,attribute_size4,1000,0
+product_variation470,product13,product13-yellow-small,Yellow - Small,100,attribute_color3,attribute_size5,1000,0
+product_variation471,product13,product13-black-medium,Black - Medium,100,attribute_color4,attribute_size1,1000,0
+product_variation472,product13,product13-black-large,Black - Large,100,attribute_color4,attribute_size2,1000,0
+product_variation473,product13,product13-black-extra_large,Black - Extra Large,100,attribute_color4,attribute_size3,1000,0
+product_variation474,product13,product13-black-extra_small,Black - Extra Small,100,attribute_color4,attribute_size4,1000,0
+product_variation475,product13,product13-black-small,Black - Small,100,attribute_color4,attribute_size5,1000,0
+product_variation476,product13,product13-grey-medium,Grey - Medium,100,attribute_color5,attribute_size1,1000,0
+product_variation477,product13,product13-grey-large,Grey - Large,100,attribute_color5,attribute_size2,1000,0
+product_variation478,product13,product13-grey-extra_large,Grey - Extra Large,100,attribute_color5,attribute_size3,1000,0
+product_variation479,product13,product13-grey-extra_small,Grey - Extra Small,100,attribute_color5,attribute_size4,1000,0
+product_variation480,product13,product13-grey-small,Grey - Small,100,attribute_color5,attribute_size5,1000,0
+product_variation481,product13,product13-blue-medium,Blue - Medium,100,attribute_color6,attribute_size1,1000,0
+product_variation482,product13,product13-blue-large,Blue - Large,100,attribute_color6,attribute_size2,1000,0
+product_variation483,product13,product13-blue-extra_large,Blue - Extra Large,100,attribute_color6,attribute_size3,1000,0
+product_variation484,product13,product13-blue-extra_small,Blue - Extra Small,100,attribute_color6,attribute_size4,1000,0
+product_variation485,product13,product13-blue-small,Blue - Small,100,attribute_color6,attribute_size5,1000,0
+product_variation486,product13,product13-yellow-medium,Yellow - Medium,100,attribute_color7,attribute_size1,1000,0
+product_variation487,product13,product13-yellow-large,Yellow - Large,100,attribute_color7,attribute_size2,1000,0
+product_variation488,product13,product13-yellow-extra_large,Yellow - Extra Large,100,attribute_color7,attribute_size3,1000,0
+product_variation489,product13,product13-yellow-extra_small,Yellow - Extra Small,100,attribute_color7,attribute_size4,1000,0
+product_variation490,product13,product13-yellow-small,Yellow - Small,100,attribute_color7,attribute_size5,1000,0
+product_variation491,product14,product14-green-medium,Green - Medium,100,attribute_color1,attribute_size1,1000,0
+product_variation492,product14,product14-green-large,Green - Large,100,attribute_color1,attribute_size2,1000,0
+product_variation493,product14,product14-green-extra_large,Green - Extra Large,100,attribute_color1,attribute_size3,1000,0
+product_variation494,product14,product14-green-extra_small,Green - Extra Small,100,attribute_color1,attribute_size4,1000,0
+product_variation495,product14,product14-green-small,Green - Small,100,attribute_color1,attribute_size5,1000,0
+product_variation496,product14,product14-red-medium,Red - Medium,100,attribute_color2,attribute_size1,1000,0
+product_variation497,product14,product14-red-large,Red - Large,100,attribute_color2,attribute_size2,1000,0
+product_variation498,product14,product14-red-extra_large,Red - Extra Large,100,attribute_color2,attribute_size3,1000,0
+product_variation499,product14,product14-red-extra_small,Red - Extra Small,100,attribute_color2,attribute_size4,1000,0
+product_variation500,product14,product14-red-small,Red - Small,100,attribute_color2,attribute_size5,1000,0
+product_variation501,product14,product14-yellow-medium,Yellow - Medium,100,attribute_color3,attribute_size1,1000,0
+product_variation502,product14,product14-yellow-large,Yellow - Large,100,attribute_color3,attribute_size2,1000,0
+product_variation503,product14,product14-yellow-extra_large,Yellow - Extra Large,100,attribute_color3,attribute_size3,1000,0
+product_variation504,product14,product14-yellow-extra_small,Yellow - Extra Small,100,attribute_color3,attribute_size4,1000,0
+product_variation505,product14,product14-yellow-small,Yellow - Small,100,attribute_color3,attribute_size5,1000,0
+product_variation506,product14,product14-black-medium,Black - Medium,100,attribute_color4,attribute_size1,1000,0
+product_variation507,product14,product14-black-large,Black - Large,100,attribute_color4,attribute_size2,1000,0
+product_variation508,product14,product14-black-extra_large,Black - Extra Large,100,attribute_color4,attribute_size3,1000,0
+product_variation509,product14,product14-black-extra_small,Black - Extra Small,100,attribute_color4,attribute_size4,1000,0
+product_variation510,product14,product14-black-small,Black - Small,100,attribute_color4,attribute_size5,1000,0
+product_variation511,product14,product14-grey-medium,Grey - Medium,100,attribute_color5,attribute_size1,1000,0
+product_variation512,product14,product14-grey-large,Grey - Large,100,attribute_color5,attribute_size2,1000,0
+product_variation513,product14,product14-grey-extra_large,Grey - Extra Large,100,attribute_color5,attribute_size3,1000,0
+product_variation514,product14,product14-grey-extra_small,Grey - Extra Small,100,attribute_color5,attribute_size4,1000,0
+product_variation515,product14,product14-grey-small,Grey - Small,100,attribute_color5,attribute_size5,1000,0
+product_variation516,product14,product14-blue-medium,Blue - Medium,100,attribute_color6,attribute_size1,1000,0
+product_variation517,product14,product14-blue-large,Blue - Large,100,attribute_color6,attribute_size2,1000,0
+product_variation518,product14,product14-blue-extra_large,Blue - Extra Large,100,attribute_color6,attribute_size3,1000,0
+product_variation519,product14,product14-blue-extra_small,Blue - Extra Small,100,attribute_color6,attribute_size4,1000,0
+product_variation520,product14,product14-blue-small,Blue - Small,100,attribute_color6,attribute_size5,1000,0
+product_variation521,product14,product14-yellow-medium,Yellow - Medium,100,attribute_color7,attribute_size1,1000,0
+product_variation522,product14,product14-yellow-large,Yellow - Large,100,attribute_color7,attribute_size2,1000,0
+product_variation523,product14,product14-yellow-extra_large,Yellow - Extra Large,100,attribute_color7,attribute_size3,1000,0
+product_variation524,product14,product14-yellow-extra_small,Yellow - Extra Small,100,attribute_color7,attribute_size4,1000,0
+product_variation525,product14,product14-yellow-small,Yellow - Small,100,attribute_color7,attribute_size5,1000,0
