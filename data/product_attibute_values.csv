@@ -1,4 +1,4 @@
-id,attribute,name
+id,attribute,name,color
 attribute_color1,clothes_color,Green
 attribute_color2,clothes_color,Red
 attribute_color3,clothes_color,Yellow

@@ -23,7 +23,7 @@ $product_variations_csv_target_path = __DIR__ . '/data/product_variations.csv';
 $json = json_decode(file_get_contents($molla_json_path), TRUE);
 $product_brands_csv = 'id,name,path,parent' . PHP_EOL;
 $product_categories_csv = 'id,name,path,parent' . PHP_EOL;
-$product_attribute_values_csv = 'id,attribute,name' . PHP_EOL;
+$product_attribute_values_csv = 'id,attribute,name,color' . PHP_EOL;
 $products_csv = 'id,stores,title,main_image,detail_images,categories,body' . PHP_EOL;
 $product_variations_csv = 'id,product,sku,title,price,attribute_clothes_color,attribute_clothes_size,stock,weight' . PHP_EOL;
 
@@ -80,7 +80,7 @@ foreach ($json['products'] as $product_index => $product) {
   foreach ($product['variants'] as $product_variation) {
     // Obtain attribute values.
     $product_attribute_values_color[$product_variation['color']] = [
-      'code' => $product_variation['color'],
+      'color' => $product_variation['color'],
       'name' => $product_variation['color_name'],
     ];
 
@@ -116,7 +116,7 @@ function turn_into_path_string(string $str): string {
 
 foreach (array_values($product_attribute_values_color) as $index => $color) {
   $index++;
-  $product_attribute_values_csv .= "attribute_color${index},clothes_color,${color['name']}" . PHP_EOL;
+  $product_attribute_values_csv .= "attribute_color${index},clothes_color,${color['name']},${color['color']}" . PHP_EOL;
 }
 
 foreach (array_values($product_attribute_values_size) as $index => $size) {
