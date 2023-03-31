@@ -16,14 +16,16 @@ $image_data_path = 'images/molla/product';
 $image_target_path = __DIR__ . '/data/' . $image_data_path;
 $product_brands_csv_target_path = __DIR__ . '/data/product_brands.csv';
 $product_categories_csv_target_path = __DIR__ . '/data/product_categories.csv';
-$product_attribute_values_csv_target_path = __DIR__ . '/data/product_attibute_values.csv';
+$product_attribute_values_color_csv_target_path = __DIR__ . '/data/product_attribute_values_color.csv';
+$product_attribute_values_size_csv_target_path = __DIR__ . '/data/product_attribute_values_size.csv';
 $products_csv_target_path = __DIR__ . '/data/products.csv';
 $product_variations_csv_target_path = __DIR__ . '/data/product_variations.csv';
 
 $json = json_decode(file_get_contents($molla_json_path), TRUE);
 $product_brands_csv = 'id,name,path,parent' . PHP_EOL;
 $product_categories_csv = 'id,name,path,parent' . PHP_EOL;
-$product_attribute_values_csv = 'id,attribute,name,color' . PHP_EOL;
+$product_attribute_values_color_csv = 'id,attribute,name,color' . PHP_EOL;
+$product_attribute_values_size_csv = 'id,attribute,name' . PHP_EOL;
 $products_csv = 'id,stores,title,main_image,detail_images,categories,body' . PHP_EOL;
 $product_variations_csv = 'id,product,sku,title,price,attribute_clothes_color,attribute_clothes_size,stock,weight' . PHP_EOL;
 
@@ -116,12 +118,12 @@ function turn_into_path_string(string $str): string {
 
 foreach (array_values($product_attribute_values_color) as $index => $color) {
   $index++;
-  $product_attribute_values_csv .= "attribute_color${index},clothes_color,${color['name']},${color['color']}" . PHP_EOL;
+  $product_attribute_values_color_csv .= "attribute_color${index},clothes_color,${color['name']},${color['color']}" . PHP_EOL;
 }
 
 foreach (array_values($product_attribute_values_size) as $index => $size) {
   $index++;
-  $product_attribute_values_csv .= "attribute_size${index},clothes_size,${size}" . PHP_EOL;
+  $product_attribute_values_size_csv .= "attribute_size${index},clothes_size,${size}" . PHP_EOL;
 }
 
 // Make product variations for every product through all attributes.
@@ -141,7 +143,8 @@ foreach ($json['products'] as $product_index => $product) {
 
 file_put_contents($product_brands_csv_target_path, $product_brands_csv);
 file_put_contents($product_categories_csv_target_path, $product_categories_csv);
-file_put_contents($product_attribute_values_csv_target_path, $product_attribute_values_csv);
+file_put_contents($product_attribute_values_color_csv_target_path, $product_attribute_values_color_csv);
+file_put_contents($product_attribute_values_size_csv_target_path, $product_attribute_values_size_csv);
 file_put_contents($products_csv_target_path, $products_csv);
 file_put_contents($product_variations_csv_target_path, $product_variations_csv);
 
