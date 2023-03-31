@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - weeshop_demo
+id: product_attribute_values_color
+migration_tags:
+  - CSV
+migration_group: null
+label: 'CSV file migration of product_attribute_values_color'
+source:
+  plugin: csv
+  path: data/product_attribute_values_color.csv
+  header_offset: 0
+  ids: [id]
+  fields:
+    -
+      name: id
+      label: 'id'
+    -
+      name: attribute
+      label: 'attribute'
+    -
+      name: name
+      label: 'name'
+    -
+      name: color
+      label: 'color'
+process:
+  attribute: attribute
+  name: name
+  color: color
+destination:
+  plugin: 'entity:commerce_product_attribute_value'
+  default_bundle: clothes_color
+migration_dependencies:
+  required: {  }
+optional: {  }

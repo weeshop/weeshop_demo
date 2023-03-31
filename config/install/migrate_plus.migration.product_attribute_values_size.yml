@@ -4,14 +4,14 @@ dependencies:
   enforced:
     module:
       - weeshop_demo
-id: attribute_values
+id: product_attribute_values_size
 migration_tags:
   - CSV
 migration_group: null
-label: 'CSV file migration of attribute_values'
+label: 'CSV file migration of product_attribute_values_size'
 source:
   plugin: csv
-  path: data/attribute_values.csv
+  path: data/product_attribute_values_size.csv
   header_offset: 0
   ids: [id]
   fields:
@@ -29,6 +29,7 @@ process:
   name: name
 destination:
   plugin: 'entity:commerce_product_attribute_value'
+  default_bundle: clothes_size
 migration_dependencies:
   required: {  }
 optional: {  }

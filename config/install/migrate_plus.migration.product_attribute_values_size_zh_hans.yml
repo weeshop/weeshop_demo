@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - weeshop_demo
+id: product_attribute_values_color_zh_hans
+migration_tags:
+  - CSV
+migration_group: null
+label: 'CSV file migration of product_attribute_values_color_zh_hans'
+source:
+  plugin: csv
+  path: data/product_attribute_values_color_zh_hans.csv
+  header_offset: 0
+  ids: [id]
+  fields:
+    -
+      name: id
+      label: 'id'
+    -
+      name: name
+      label: 'name'
+  constants:
+    langcode: 'zh-hans'
+process:
+  attribute_value_id:
+    plugin: migration_lookup
+    source: id
+    migration:
+      - product_attribute_values_color
+  name: name
+  langcode: constants/langcode
+destination:
+  plugin: 'entity:commerce_product_attribute_value'
+  default_bundle: clothes_size
+  translations: true
+migration_dependencies:
+  required:
+    - attribute_values
+optional: {  }

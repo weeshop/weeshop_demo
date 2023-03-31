@@ -4,14 +4,14 @@ dependencies:
   enforced:
     module:
       - weeshop_demo
-id: attribute_values_zh_hans
+id: product_attribute_values_color_zh_hans
 migration_tags:
   - CSV
 migration_group: null
-label: 'CSV file migration of attribute_values'
+label: 'CSV file migration of product_attribute_values_color_zh_hans'
 source:
   plugin: csv
-  path: data/attribute_values_zh_hans.csv
+  path: data/product_attribute_values_color_zh_hans.csv
   header_offset: 0
   ids: [id]
   fields:
@@ -28,11 +28,12 @@ process:
     plugin: migration_lookup
     source: id
     migration:
-      - attribute_values
+      - product_attribute_values_color
   name: name
   langcode: constants/langcode
 destination:
   plugin: 'entity:commerce_product_attribute_value'
+  default_bundle: clothes_color
   translations: true
 migration_dependencies:
   required:

@@ -1,0 +1,103 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - weeshop_demo
+id: products
+migration_tags:
+  - CSV
+migration_group: null
+label: 'CSV file migration of products'
+source:
+  plugin: csv
+  path: data/products.csv
+  header_offset: 0
+  ids: [id]
+  fields:
+    -
+      name: id
+      label: 'id'
+    -
+      name: stores
+      label: 'stores'
+    -
+      name: title
+      label: 'title'
+    -
+      name: main_image
+      label: 'main_image'
+    -
+      name: detail_images
+      label: 'detail_images'
+    -
+      name: categories
+      label: 'categories'
+    -
+      name: body
+      label: 'body'
+  constants:
+    body_format: 'full_html'
+    main_image_file_destination: 'public://product/main_image/'
+    detail_images_file_destination: 'public://product/detail_images/'
+    inline_images_file_destination: 'public://inline-images/migrate/'
+    file_source_path: 'data/'
+process:
+  product_id: id
+  stores:
+    - plugin: explode
+      source: stores
+      delimiter: ','
+    - plugin: migration_lookup
+      migration: stores
+  title: title
+  image:
+    - plugin: concat
+      source:
+        - 'constants/file_source_path'
+        - main_image
+    - plugin: image_import
+      destination: 'constants/main_image_file_destination'
+      rename: true
+      title: '@title'
+      alt: !title
+  detail_images:
+    - plugin: callback
+      callable: _weeshop_demo_migration_concat_file_path
+      source:
+        - detail_images
+        - 'constants/file_source_path'
+    - plugin: multiple_values
+    - plugin: image_import
+      destination: 'constants/detail_images_file_destination'
+      rename: true
+      title: '@title'
+      alt: !title
+  categories:
+    - plugin: explode
+      source: categories
+      delimiter: ','
+    - plugin: entity_generate
+      entity_type: taxonomy_term
+      value_key: name
+      bundle_key: vid
+      bundle: product_categories
+      ignore_case: true
+      default_values:
+        vid: product_categories
+  'body/summary': summary
+  'body/value':
+    - plugin: save_inline_image
+      source: body
+      image_file_source_path: 'constants/file_source_path'
+      image_file_save_destination: 'constants/inline_images_file_destination'
+  'body/format': constants/body_format
+  uid:
+    plugin: default_value
+    default_value: 1
+destination:
+  plugin: 'entity:commerce_product'
+  default_bundle: clothes
+migration_dependencies:
+  required: {  }
+optional: {  }

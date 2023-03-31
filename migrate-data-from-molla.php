@@ -26,7 +26,7 @@ $product_brands_csv = 'id,name,path,parent' . PHP_EOL;
 $product_categories_csv = 'id,name,path,parent' . PHP_EOL;
 $product_attribute_values_color_csv = 'id,attribute,name,color' . PHP_EOL;
 $product_attribute_values_size_csv = 'id,attribute,name' . PHP_EOL;
-$products_csv = 'id,stores,title,main_image,detail_images,categories,body' . PHP_EOL;
+$products_csv = 'id,stores,title,main_image,detail_images,brand,categories,body' . PHP_EOL;
 $product_variations_csv = 'id,product,sku,title,price,attribute_clothes_color,attribute_clothes_size,stock,weight' . PHP_EOL;
 
 $product_brands = $product_categories = [];
@@ -70,13 +70,15 @@ foreach ($json['products'] as $product_index => $product) {
   }, $images);
   $detail_images = implode('|', $images_with_data_path);
 
+  $brand = $product['brands'][0]['name'];
   $categories = array_map(function ($category) {
     return $category['name'];
   }, $product['category']);
   $categories_str = '"' . implode(',', $categories) . '"';
 
   $body = '"' . $product['short_desc'] . '"';
-  $products_csv .= "product${product_index},1,${product['name']},${images_with_data_path[0]},${detail_images},${categories_str},${body}" . PHP_EOL;
+
+  $products_csv .= "product${product_index},1,${product['name']},${images_with_data_path[0]},${detail_images},${brand},${categories_str},${body}" . PHP_EOL;
 
   // Obtain product attribute values.
   foreach ($product['variants'] as $product_variation) {
