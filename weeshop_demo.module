@@ -57,10 +57,11 @@ function _weeshop_demo_get_migration_list(): array {
  * Dynamic alter the relative file path to an absolute path.
  */
 function weeshop_demo_migration_plugins_alter(array &$migrations): void {
+  $migration_list = _weeshop_demo_get_migration_list();
   foreach ($migrations as $id => $migration) {
-    if (in_array($id, _weeshop_demo_get_migration_list())) {
+    if (in_array('migrate_plus.migration.' . $id, $migration_list)) {
       $migration['source']['path'] = __DIR__ . '/' . $migration['source']['path'];
-      if (isset($migration['source']['constants']) && isset($migration['source']['constants']['file_source_path'])) {
+      if (isset($migration['source']['constants']['file_source_path'])) {
         $migration['source']['constants']['file_source_path'] = __DIR__ . '/' . $migration['source']['constants']['file_source_path'];
       }
       $migrations[$id] = $migration;
@@ -74,8 +75,7 @@ function weeshop_demo_migration_plugins_alter(array &$migrations): void {
 function _weeshop_demo_get_migration_list_from_manifest_file() {
   $manifest_file = Drupal::service('extension.path.resolver')
     ->getPath('module', 'weeshop_demo') . '/migrate_manifest.yml';
-  $migration_manifest = Yaml::parse(file_get_contents($manifest_file));
-  return $migration_manifest;
+  return Yaml::parse(file_get_contents($manifest_file));
 }
 
 /**

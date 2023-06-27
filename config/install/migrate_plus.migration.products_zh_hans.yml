@@ -4,7 +4,7 @@ dependencies:
   enforced:
     module:
       - weeshop_demo
-id: products
+id: products_zh_hans
 migration_tags:
   - CSV
 migration_group: null
@@ -60,7 +60,7 @@ process:
       destination: 'constants/main_image_file_destination'
       rename: true
       title: '@title'
-      alt: !title
+      alt: '@title'
   detail_images:
     - plugin: callback
       callable: _weeshop_demo_migration_concat_file_path
@@ -72,7 +72,7 @@ process:
       destination: 'constants/detail_images_file_destination'
       rename: true
       title: '@title'
-      alt: !title
+      alt: '@title'
   categories:
     - plugin: explode
       source: categories

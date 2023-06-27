@@ -1,7 +1,13 @@
-- services
 - stores
+- stores_zh_hans
 - product_categories
-- attribute_values
+- product_categories_zh_hans
+- product_brands
+- product_brands_zh_hans
+- product_attribute_values_color
+- product_attribute_values_color_zh_hans
+- product_attribute_values_size
+- product_attribute_values_size_zh_hans
 - products
+- products_zh_hans
 - product_variations
-- product_adverts

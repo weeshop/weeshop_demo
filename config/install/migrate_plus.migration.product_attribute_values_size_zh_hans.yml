@@ -4,7 +4,7 @@ dependencies:
   enforced:
     module:
       - weeshop_demo
-id: product_attribute_values_color_zh_hans
+id: product_attribute_values_size_zh_hans
 migration_tags:
   - CSV
 migration_group: null

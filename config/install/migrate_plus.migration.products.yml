@@ -60,7 +60,7 @@ process:
       destination: 'constants/main_image_file_destination'
       rename: true
       title: '@title'
-      alt: !title
+      alt: '@title'
   detail_images:
     - plugin: callback
       callable: _weeshop_demo_migration_concat_file_path
@@ -71,8 +71,8 @@ process:
     - plugin: image_import
       destination: 'constants/detail_images_file_destination'
       rename: true
-      title: title
-      alt: !title
+      title: '@title'
+      alt: '@title'
   categories:
     - plugin: explode
       source: categories
