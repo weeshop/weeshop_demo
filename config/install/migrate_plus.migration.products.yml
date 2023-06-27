@@ -71,7 +71,7 @@ process:
     - plugin: image_import
       destination: 'constants/detail_images_file_destination'
       rename: true
-      title: '@title'
+      title: title
       alt: !title
   categories:
     - plugin: explode
