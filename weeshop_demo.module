@@ -104,9 +104,11 @@ function _weeshop_demo_execute_migrations($action = 'import'): void {
 
   // Create menu link for every product category terms.
   /** @var \Drupal\taxonomy\TermStorageInterface $termStorage */
+  /*
   $termStorage = Drupal::entityTypeManager()->getStorage('taxonomy_term');
   $categories = $termStorage->loadTree('product_categories', 0, NULL, TRUE);
   _weeshop_demo_create_menu_links($categories);
+   */
 }
 
 /**
