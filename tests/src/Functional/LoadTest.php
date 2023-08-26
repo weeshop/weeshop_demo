@@ -2,9 +2,9 @@
 
 namespace Drupal\Tests\weeshop_demo\Functional;
 
-use Drupal\user\UserInterface;
 use Drupal\Core\Url;
 use Drupal\Tests\BrowserTestBase;
+use Drupal\user\UserInterface;
 
 /**
  * Simple test to ensure that main page loads with module enabled.
@@ -39,7 +39,7 @@ class LoadTest extends BrowserTestBase {
    *
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
-  protected function setUp() {
+  protected function setUp(): void {
     parent::setUp();
     $this->user = $this->drupalCreateUser(['administer site configuration']);
     $this->drupalLogin($this->user);

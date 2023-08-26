@@ -1,0 +1,56 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - weeshop_demo
+id: stores
+migration_tags:
+  - CSV
+migration_group: null
+label: 'CSV migration of mega menu gallery images.'
+source:
+  plugin: csv
+  path: data/files_mega_menu_gallery.csv
+  header_offset: 0
+  ids: [id]
+  fields:
+    -
+      name: id
+      label: 'id'
+    -
+      name: image
+      label: 'Image'
+    -
+      name: title
+      label: 'Title'
+    -
+      name: link
+      label: 'Link'
+    -
+      name: weight
+      label: 'Weight'
+  constants:
+    file_destination: 'public://molla-gallery/'
+    file_source_path: 'data/'
+process:
+  image:
+    - plugin: concat
+      source:
+        - 'constants/file_source_path'
+        - image
+    - plugin: image_import
+      destination: 'constants/file_destination'
+      id_only: true
+      rename: true
+      title: '@title'
+      alt: '@title'
+  title: title
+  link: title
+  weight: title
+destination:
+  plugin: 'molla_mega_menu_gallery'
+  block_id: weeshop_molla_mega_menu_gallery
+migration_dependencies:
+  required: {  }
+optional: {  }
