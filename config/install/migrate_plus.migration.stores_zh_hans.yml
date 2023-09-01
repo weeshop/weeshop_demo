@@ -11,7 +11,7 @@ migration_group: null
 label: 'CSV file migration of stores zh-hans'
 source:
   plugin: csv
-  path: data/stores.csv
+  path: data/stores_zh_hans.csv
   header_offset: 0
   ids: [id]
   fields:

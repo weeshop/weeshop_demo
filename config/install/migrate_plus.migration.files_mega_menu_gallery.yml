@@ -4,7 +4,7 @@ dependencies:
   enforced:
     module:
       - weeshop_demo
-id: stores
+id: files_mega_menu_gallery
 migration_tags:
   - CSV
 migration_group: null
@@ -41,7 +41,6 @@ process:
         - image
     - plugin: image_import
       destination: 'constants/file_destination'
-      id_only: true
       rename: true
       title: '@title'
       alt: '@title'
