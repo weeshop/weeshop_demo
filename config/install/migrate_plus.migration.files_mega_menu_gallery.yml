@@ -34,6 +34,7 @@ source:
     file_destination: 'public://molla-gallery/'
     file_source_path: 'data/'
 process:
+  id: id
   image:
     - plugin: concat
       source:
@@ -45,8 +46,8 @@ process:
       title: '@title'
       alt: '@title'
   title: title
-  link: title
-  weight: title
+  link: link
+  weight: weight
 destination:
   plugin: 'molla_mega_menu_gallery'
   block_id: weeshop_molla_mega_menu_gallery
