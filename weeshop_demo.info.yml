@@ -2,7 +2,7 @@ name: 'WeeShop Demo'
 type: module
 description: 'WeeShop demonstration data provider.'
 package: 'WeeShop'
-core_version_requirement: ^9.2 || ^10
+core_version_requirement: ^11
 dependencies:
   - migrate_file:migrate_file
   - migrate_source_csv:migrate_source_csv
