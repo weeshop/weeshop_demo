@@ -17,7 +17,7 @@ source:
   fields:
     -
       name: id
-      label: 'id'
+      label: 'Id'
     -
       name: image
       label: 'Image'
