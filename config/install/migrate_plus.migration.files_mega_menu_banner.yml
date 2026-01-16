@@ -22,14 +22,14 @@ source:
       name: image
       label: 'Image'
     -
-      name: title
-      label: 'Title'
+      name: text
+      label: 'Text'
     -
       name: link
       label: 'Link'
     -
-      name: weight
-      label: 'Weight'
+      name: block_id
+      label: 'Block id'
   constants:
     file_destination: 'public://molla-banner/'
     file_source_path: 'data/'
