@@ -1,0 +1,55 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - weeshop_demo
+id: files_mega_menu_banner
+migration_tags:
+  - CSV
+migration_group: null
+label: 'CSV migration of mega menu banner images.'
+source:
+  plugin: csv
+  path: data/files_mega_menu_banner.csv
+  header_offset: 0
+  ids: [id]
+  fields:
+    -
+      name: id
+      label: 'Id'
+    -
+      name: image
+      label: 'Image'
+    -
+      name: title
+      label: 'Title'
+    -
+      name: link
+      label: 'Link'
+    -
+      name: weight
+      label: 'Weight'
+  constants:
+    file_destination: 'public://molla-banner/'
+    file_source_path: 'data/'
+process:
+  id: id
+  image:
+    - plugin: concat
+      source:
+        - 'constants/file_source_path'
+        - image
+    - plugin: image_import
+      destination: 'constants/file_destination'
+      rename: true
+      title: '@title'
+      alt: '@title'
+  text: text
+  link: link
+  block_id: block_id
+destination:
+  plugin: 'molla_mega_menu_banner'
+migration_dependencies:
+  required: {  }
+optional: {  }
